@@ -129,7 +129,7 @@
 
                         <!-- Options -->
                         <div class="options-container">
-                            <template x-for="(option, key) in question.options" :key="key">
+                            <template x-for="key in getSortedOptionKeys(question.options)" :key="key">
                                 <label class="option-label" 
                                        :class="{
                                            'correct': submitted && showAnswers[question.id] && question.correctAnswer.includes(key),
@@ -144,7 +144,7 @@
                                         @change="handleAnswerChange(question, key, $event)"
                                     >
                                     <span class="option-letter" x-text="key + '.'"></span>
-                                    <span class="option-text" x-text="option"></span>
+                                    <span class="option-text" x-text="question.options[key]"></span>
                                 </label>
                             </template>
                         </div>
