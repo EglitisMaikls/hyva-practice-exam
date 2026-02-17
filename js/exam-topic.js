@@ -18,6 +18,9 @@ function exam() {
         // Mode and topic selection
         examMode: '',
         selectedTopics: [],
+        topicStudyOpen: false,
+        expandedStudyTopics: {},
+        expandedStudySubsections: {},
         examStarted: false,
         estimatedQuestions: 0,
         maxQuestions: 60,
@@ -212,6 +215,55 @@ function exam() {
         },
         
         /**
+         * Toggle topic study block visibility
+         */
+        toggleTopicStudy() {
+            this.topicStudyOpen = !this.topicStudyOpen;
+        },
+
+        /**
+         * Get study topic data by ID
+         */
+        getStudyTopic(topicNum) {
+            return window.STUDY_CONTENT && window.STUDY_CONTENT[topicNum] ? window.STUDY_CONTENT[topicNum] : null;
+        },
+
+        /**
+         * Toggle study topic expand/collapse
+         */
+        toggleStudyTopic(topicNum) {
+            const key = topicNum;
+            this.expandedStudyTopics[key] = !this.expandedStudyTopics[key];
+            this.expandedStudyTopics = { ...this.expandedStudyTopics };
+        },
+
+        /**
+         * Toggle study subsection expand/collapse
+         */
+        toggleStudySubsection(topicNum, subIndex) {
+            const key = `${topicNum}-${subIndex}`;
+            this.expandedStudySubsections[key] = !this.expandedStudySubsections[key];
+            this.expandedStudySubsections = { ...this.expandedStudySubsections };
+        },
+
+        /**
+         * Check if topic study can be started (for exam mode)
+         */
+        canStartTopicStudy() {
+            return this.selectedTopics.length > 0;
+        },
+
+        /**
+         * Start topic study with selected topics
+         */
+        startTopicStudy() {
+            if (!this.canStartTopicStudy()) return;
+            this.examMode = 'topic';
+            this.updatePreview();
+            this.startExam();
+        },
+
+        /**
          * Toggle dark mode
          */
         toggleDarkMode() {
@@ -235,7 +287,7 @@ function exam() {
         getModeName() {
             const names = {
                 'full': 'Full Exam',
-                'topic': 'Topic Study'
+                'topic': 'Questions by topics'
             };
             return names[this.examMode] || '';
         },
@@ -350,7 +402,7 @@ function exam() {
                 // Topic study: all questions from selected topics
                 examQuestions = this.generateTopicStudy();
                 const topicInfo = this.selectedTopics.map(t => `${this.getTopicName(t)} (topic ${t})`).join(', ');
-                this.examTitle = `Topic Study - ${topicInfo}`;
+                this.examTitle = `Questions by topics - ${topicInfo}`;
             }
 
             // Shuffle questions

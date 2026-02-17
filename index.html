@@ -16,6 +16,15 @@
     <script src="js/exams-data-topic-7.js"></script>
     <script src="js/exams-data-topic-8.js"></script>
     <script src="js/topic-names.js"></script>
+    <script src="js/study-content.js"></script>
+    <script src="js/study-content-topic-1.js"></script>
+    <script src="js/study-content-topic-2.js"></script>
+    <script src="js/study-content-topic-3.js"></script>
+    <script src="js/study-content-topic-4.js"></script>
+    <script src="js/study-content-topic-5.js"></script>
+    <script src="js/study-content-topic-6.js"></script>
+    <script src="js/study-content-topic-7.js"></script>
+    <script src="js/study-content-topic-8.js"></script>
 </head>
 <body>
     <div class="container" x-data="exam()" x-init="init()" x-effect="document.documentElement.classList.toggle('dark-mode', darkMode)">
@@ -28,12 +37,57 @@
         </div>
         <!-- Instructions Section -->
         <div class="instructions">
-            <p>Select the correct answers for each question, including multiple-choice options when applicable, and click Submit to view your results. The quiz calculates your score and percentage, highlighting any incorrect questions to help you identify areas for improvement.</p>
-            <p>Click on the Answer button for the correct answer and its explanation.</p>
+            <h1>Hyvä Professional Developer certification prep course</h1>
             <p>Information was scraped from docs.hyva.io on 2026-01-14. These are not the real exam questions, quiz is based on the documentation.</p>
+            <p>Topic study includes information from the official <a href="https://docs.hyva.io/hyva-themes/certification/professional-developer-certification.html">Hyvä Professional Developer Certification Guide</a>. There are explanations and examples added to each topic, but this is not 100% guaranteed correct information, please do your own investigation.</p>
         </div>
 
         <hr class="divider">
+
+        <!-- Topic Study (shown before exam starts) -->
+        <div x-show="!examStarted" class="topic-study-section">
+            <h2 class="section-title">Topic Study</h2>
+            <div class="mode-option" @click="toggleTopicStudy()" :class="{ 'is-expanded': topicStudyOpen }">
+                <div class="mode-card mode-card-clickable">
+                    <strong>Study by Topic</strong>
+                    <p>Browse topics and subsections with explanations and examples</p>
+                    <span class="expand-indicator" x-text="topicStudyOpen ? '▼' : '▶'"></span>
+                </div>
+            </div>
+            <div x-show="topicStudyOpen" class="study-by-topic-content">
+                <div class="study-topics-column">
+                    <template x-for="topicNum in [1,2,3,4,5,6,7,8]" :key="topicNum">
+                        <div class="study-topic-card" :class="{ 'is-expanded': expandedStudyTopics[topicNum] }">
+                            <div 
+                                class="study-topic-header"
+                                @click="toggleStudyTopic(topicNum)"
+                            >
+                                <span class="study-topic-indicator" x-text="expandedStudyTopics[topicNum] ? '▼' : '▶'"></span>
+                                <strong x-text="'Topic ' + topicNum + ': ' + (getStudyTopic(topicNum)?.name || getTopicName(topicNum))"></strong>
+                            </div>
+                            <div x-show="expandedStudyTopics[topicNum]" class="study-subsections">
+                                <template x-for="(subsection, subIndex) in (getStudyTopic(topicNum)?.subsections || [])" :key="topicNum + '-' + subIndex">
+                                    <div class="study-subsection" :class="{ 'is-expanded': expandedStudySubsections[topicNum + '-' + subIndex] }">
+                                        <div 
+                                            class="study-subsection-header"
+                                            @click="toggleStudySubsection(topicNum, subIndex)"
+                                        >
+                                            <span class="study-subsection-indicator" x-text="expandedStudySubsections[topicNum + '-' + subIndex] ? '▼' : '▶'"></span>
+                                            <span class="study-subsection-title" x-text="subsection.title"></span>
+                                        </div>
+                                        <div x-show="expandedStudySubsections[topicNum + '-' + subIndex]" class="study-subsection-content">
+                                            <div class="study-content-body" x-html="subsection.content"></div>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider" x-show="!examStarted">
 
         <!-- Mode Selection (shown before exam starts) -->
         <div x-show="!examStarted" class="mode-selection">
@@ -51,7 +105,7 @@
                 <label class="mode-option">
                     <input type="radio" name="examMode" value="topic" x-model="examMode" @change="updatePreview()">
                     <div class="mode-card">
-                        <strong>Topic Study</strong>
+                        <strong>Questions by topics</strong>
                         <p>Study all questions from selected topics (no limit)</p>
                     </div>
                 </label>
