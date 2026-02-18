@@ -1,12 +1,9 @@
-/**
- * Study content - Topic 4: Compatibility Modules
- */
 window.STUDY_CONTENT = window.STUDY_CONTENT || {};
 window.STUDY_CONTENT[4] = {
     name: "Compatibility Modules",
     subsections: [
         {
-            title: "4.1 Override a template provided by a compatibility module in a theme",
+            title: "Override a template provided by a compatibility module in a theme",
             bullets: [
                 "Choosing the correct module folder name for template overrides",
                 "Original module vs compatibility module"
@@ -33,7 +30,7 @@ window.STUDY_CONTENT[4] = {
 References: <ul><li>Hyvä Themes – Compatibility Modules: Technical Deep-Dive (Automatic Template Overrides, Overriding a Compatibility Template in a Theme, DI Configuration for Fallback): <a href=\\"https://docs.hyva.io/hyva-themes/compatibility-modules/technical-deep-dive.html\\" target=\\"_blank\\" rel=\\"noopener\\">docs.hyva.io/hyva-themes/compatibility-modules/technical-deep-dive.html</a></li></ul>`
         },
         {
-            title: "4.2 Demonstrate understanding of common steps to replace Luma JS with Alpine/vanilla JS",
+            title: "Demonstrate understanding of common steps to replace Luma JS with Alpine/vanilla JS",
             bullets: [
                 "Replacing x-magento-init with inline JS",
                 "Refactoring jQuery to vanilla JS",
@@ -77,7 +74,7 @@ References: <ul><li>Hyvä Themes – Compatibility Modules: Technical Deep-Dive 
 </ul>`
         },
         {
-            title: "4.3 Creating Compatibility Modules",
+            title: "Creating Compatibility Modules",
             bullets: [
                 "Registering a module with the compatibility module registry",
                 "Understanding hyva-themes.json"

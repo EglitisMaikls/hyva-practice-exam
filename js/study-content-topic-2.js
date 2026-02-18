@@ -1,12 +1,9 @@
-/**
- * Study content - Topic 2: Templates
- */
 window.STUDY_CONTENT = window.STUDY_CONTENT || {};
 window.STUDY_CONTENT[2] = {
     name: "Templates",
     subsections: [
         {
-            title: "2.1 Determine how to escape values securely and depending on context",
+            title: "Determine how to escape values securely and depending on context",
             bullets: [
                 "Escaping JSON to be rendered in a data attribute",
                 "Escaping the value in a textarea input",
@@ -52,7 +49,7 @@ const config = JSON.parse('&lt;?= $escaper-&gt;escapeJs(json_encode($config)) ?&
 </table>`
         },
         {
-            title: "2.2 Determine how to render a child template with the current block instance",
+            title: "Determine how to render a child template with the current block instance",
             bullets: [
                 "Rendering a template programmatically from a template without using a child block"
             ],

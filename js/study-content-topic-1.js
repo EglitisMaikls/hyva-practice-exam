@@ -1,12 +1,9 @@
-/**
- * Study content - Topic 1: Layout XML Blocks and View Models
- */
 window.STUDY_CONTENT = window.STUDY_CONTENT || {};
 window.STUDY_CONTENT[1] = {
     name: "Layout XML Blocks and View Models",
     subsections: [
         {
-            title: "1.1 Demonstrate the ability to use Layout Merging for theme customization",
+            title: "Demonstrate the ability to use Layout Merging for theme customization",
             bullets: [
                 "Adding a block to a container",
                 "Effects of redeclaring a block from a parent theme in a child theme",
@@ -52,7 +49,7 @@ window.STUDY_CONTENT[1] = {
   <pre><code class="language-php">&lt;?= $block-&gt;getChildHtml('related_products') ?&gt;</code></pre>`
         },
         {
-            title: "1.2 Demonstrate the ability to use Layout handles to implement customizations",
+            title: "Demonstrate the ability to use Layout handles to implement customizations",
             bullets: [
                 "Determining the action layout handle for a page",
                 "Determining all layout handles applied to a route",
@@ -97,7 +94,7 @@ window.STUDY_CONTENT[1] = {
 </ol>`
         },
         {
-            title: "1.3 Demonstrate the ability to use the Magento block cache effectively",
+            title: "Demonstrate the ability to use the Magento block cache effectively",
             bullets: [
                 "Caching a block in the block_html cache",
                 "Possible issues that can arise from using the block_html cache"

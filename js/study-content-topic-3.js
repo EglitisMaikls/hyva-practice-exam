@@ -1,12 +1,9 @@
-/**
- * Study content - Topic 3: Themes
- */
 window.STUDY_CONTENT = window.STUDY_CONTENT || {};
 window.STUDY_CONTENT[3] = {
     name: "Themes",
     subsections: [
         {
-            title: "3.1 Demonstrate how to share styles and Tailwind configuration between themes",
+            title: "Demonstrate how to share styles and Tailwind configuration between themes",
             bullets: [
                 "Common customizations in a child theme tailwind.config.js",
                 "Sourcing parent theme files (content / hyva-sources)",

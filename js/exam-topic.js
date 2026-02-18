@@ -1,7 +1,3 @@
-/**
- * Alpine.js Exam Component with Topic-Based Study
- */
-
 function exam() {
     return {
         questions: [],
@@ -14,8 +10,9 @@ function exam() {
         score: 0,
         totalQuestions: 0,
         percentage: 0,
+        activeStudyTopic: 1,
+        activeStudySubsection: 0,
         
-        // Mode and topic selection
         examMode: '',
         selectedTopics: [],
         topicStudyOpen: false,
@@ -25,17 +22,14 @@ function exam() {
         estimatedQuestions: 0,
         maxQuestions: 60,
         
-        // Dark mode
         darkMode: localStorage.getItem('darkMode') === 'true' || false,
 
         /**
          * Initialize component
          */
         init() {
-            // Initialize dark mode
             document.documentElement.classList.toggle('dark-mode', this.darkMode);
             
-            // Try to restore saved exam state first
             if (this.loadExamState()) {
                 // Successfully restored saved state
                 return;
@@ -219,6 +213,44 @@ function exam() {
          */
         toggleTopicStudy() {
             this.topicStudyOpen = !this.topicStudyOpen;
+
+            if (this.topicStudyOpen) {
+                // Rule: Open Topic 1 by default if nothing is selected,
+                // OR ensure only the active topic is expanded if returning.
+
+                // If we want to strictly reset to Topic 1.1 every time we open the "Study by Topic" section:
+                this.expandedStudyTopics = { 1: true };
+                this.activeStudyTopic = 1;
+                this.activeStudySubsection = 0;
+
+                // Alternatively, if you wanted to remember the last position but ensure accordion style:
+                /*
+                if (!this.activeStudyTopic) {
+                    this.activeStudyTopic = 1;
+                    this.activeStudySubsection = 0;
+                }
+                this.expandedStudyTopics = {};
+                this.expandedStudyTopics[this.activeStudyTopic] = true;
+                */
+            }
+        },
+
+        setActiveStudy(topicNum, subIndex) {
+            this.activeStudyTopic = topicNum;
+            this.activeStudySubsection = subIndex;
+
+            // On mobile, you might want to auto-scroll to content,
+            // but for desktop 2-col layout this isn't strictly necessary.
+            // window.scrollTo({ top: document.querySelector('.study-content-viewer').offsetTop - 20, behavior: 'smooth' });
+        },
+
+        // ADD HELPER TO GET ACTIVE CONTENT Safely
+        getActiveStudyContent() {
+            const topic = this.getStudyTopic(this.activeStudyTopic);
+            if (!topic || !topic.subsections || !topic.subsections[this.activeStudySubsection]) {
+                return null;
+            }
+            return topic.subsections[this.activeStudySubsection];
         },
 
         /**
@@ -232,9 +264,30 @@ function exam() {
          * Toggle study topic expand/collapse
          */
         toggleStudyTopic(topicNum) {
-            const key = topicNum;
-            this.expandedStudyTopics[key] = !this.expandedStudyTopics[key];
-            this.expandedStudyTopics = { ...this.expandedStudyTopics };
+            // If clicking the topic that is already open
+            if (this.expandedStudyTopics[topicNum]) {
+                // Optional: You can choose to close it (collapse)
+                // OR do nothing (since it's the active view).
+                // Let's toggle it closed for standard accordion behavior,
+                // but keep the content visible on the right.
+                this.expandedStudyTopics[topicNum] = false;
+                return;
+            }
+
+            // If clicking a NEW topic:
+            // 1. Close all other topics (reset the object)
+            this.expandedStudyTopics = {};
+
+            // 2. Open the selected topic
+            this.expandedStudyTopics[topicNum] = true;
+
+            // 3. Auto-select the first subsection (index 0)
+            this.activeStudyTopic = topicNum;
+            this.activeStudySubsection = 0;
+
+            // Optional: Scroll back to top of content viewer if needed
+            const viewer = document.querySelector('.study-content-viewer');
+            if (viewer) viewer.scrollTop = 0;
         },
 
         /**

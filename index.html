@@ -6,7 +6,6 @@
     <title>Hyvä Professional Developer - Practice Exam</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <!-- Load topic data files -->
     <script src="js/exams-data-topic-1.js"></script>
     <script src="js/exams-data-topic-2.js"></script>
     <script src="js/exams-data-topic-3.js"></script>
@@ -28,71 +27,87 @@
 </head>
 <body>
     <div class="container" x-data="exam()" x-init="init()" x-effect="document.documentElement.classList.toggle('dark-mode', darkMode)">
-        <!-- Dark Mode Toggle -->
         <div class="dark-mode-toggle">
             <button @click="toggleDarkMode()" class="theme-toggle-button" :aria-label="darkMode ? 'Switch to light mode' : 'Switch to dark mode'">
                 <span x-show="!darkMode">🌙</span>
                 <span x-show="darkMode">☀️</span>
             </button>
         </div>
-        <!-- Instructions Section -->
         <div class="instructions">
             <h1>Hyvä Professional Developer certification prep course</h1>
-            <p>Information was scraped from docs.hyva.io on 2026-01-14. These are not the real exam questions, quiz is based on the documentation.</p>
-            <p>Topic study includes information from the official <a href="https://docs.hyva.io/hyva-themes/certification/professional-developer-certification.html">Hyvä Professional Developer Certification Guide</a>. There are explanations and examples added to each topic, but this is not 100% guaranteed correct information, please do your own investigation.</p>
+            <p>Information was scraped from docs.hyva.io on 2026-01-14 and used for question and topic study content generation with LLM. The practice exam does not contain the real exam questions.</p>
+            <p>Topic study includes key topics from the official <a href="https://docs.hyva.io/hyva-themes/certification/professional-developer-certification.html">Hyvä Professional Developer Certification Guide</a>. There are explanations and examples added to each topic, but this is not 100% guaranteed correct information, please do your own investigation.</p>
+            <p>For Magebit internal use only.</p>
         </div>
 
         <hr class="divider">
 
-        <!-- Topic Study (shown before exam starts) -->
         <div x-show="!examStarted" class="topic-study-section">
-            <h2 class="section-title">Topic Study</h2>
             <div class="mode-option" @click="toggleTopicStudy()" :class="{ 'is-expanded': topicStudyOpen }">
                 <div class="mode-card mode-card-clickable">
                     <strong>Study by Topic</strong>
-                    <p>Browse topics and subsections with explanations and examples</p>
+                    <p>Browse topics and subsections from the Certification Guide. Explanations and examples are added from the official Hyva documentation.</p>
                     <span class="expand-indicator" x-text="topicStudyOpen ? '▼' : '▶'"></span>
                 </div>
             </div>
-            <div x-show="topicStudyOpen" class="study-by-topic-content">
-                <div class="study-topics-column">
-                    <template x-for="topicNum in [1,2,3,4,5,6,7,8]" :key="topicNum">
-                        <div class="study-topic-card" :class="{ 'is-expanded': expandedStudyTopics[topicNum] }">
-                            <div 
-                                class="study-topic-header"
-                                @click="toggleStudyTopic(topicNum)"
-                            >
-                                <span class="study-topic-indicator" x-text="expandedStudyTopics[topicNum] ? '▼' : '▶'"></span>
-                                <strong x-text="'Topic ' + topicNum + ': ' + (getStudyTopic(topicNum)?.name || getTopicName(topicNum))"></strong>
-                            </div>
-                            <div x-show="expandedStudyTopics[topicNum]" class="study-subsections">
-                                <template x-for="(subsection, subIndex) in (getStudyTopic(topicNum)?.subsections || [])" :key="topicNum + '-' + subIndex">
-                                    <div class="study-subsection" :class="{ 'is-expanded': expandedStudySubsections[topicNum + '-' + subIndex] }">
-                                        <div 
-                                            class="study-subsection-header"
-                                            @click="toggleStudySubsection(topicNum, subIndex)"
+
+            <div x-show="topicStudyOpen" class="study-by-topic-content" style="margin-top: 20px;">
+                <div class="study-container">
+
+                    <aside class="study-sidebar">
+                        <template x-for="topicNum in [1,2,3,4,5,6,7,8]" :key="topicNum">
+                            <div class="sidebar-topic-item">
+                                <div class="sidebar-topic-header" @click="toggleStudyTopic(topicNum)">
+                                    <span class="sidebar-topic-title" x-text="topicNum + '. ' + getTopicName(topicNum)"></span>
+                                    <span class="sidebar-arrow" x-text="expandedStudyTopics[topicNum] ? '▼' : '▶'"></span>
+                                </div>
+
+                                <div x-show="expandedStudyTopics[topicNum]" class="sidebar-subsections">
+                                    <template x-for="(subsection, subIndex) in (getStudyTopic(topicNum)?.subsections || [])" :key="topicNum + '-' + subIndex">
+                                        <div
+                                                class="sidebar-sub-item"
+                                                :class="{ 'active': activeStudyTopic === topicNum && activeStudySubsection === subIndex }"
+                                                @click="setActiveStudy(topicNum, subIndex)"
                                         >
-                                            <span class="study-subsection-indicator" x-text="expandedStudySubsections[topicNum + '-' + subIndex] ? '▼' : '▶'"></span>
-                                            <span class="study-subsection-title" x-text="subsection.title"></span>
+                                            <span x-text="(subIndex + 1) + '. ' + subsection.title"></span>
                                         </div>
-                                        <div x-show="expandedStudySubsections[topicNum + '-' + subIndex]" class="study-subsection-content">
-                                            <div class="study-content-body" x-html="subsection.content"></div>
-                                        </div>
+                                    </template>
+
+                                    <div x-show="!(getStudyTopic(topicNum)?.subsections?.length)" style="padding: 10px; font-size: 12px; color: #999;">
+                                        No content available yet.
                                     </div>
-                                </template>
+                                </div>
                             </div>
-                        </div>
-                    </template>
+                        </template>
+                    </aside>
+
+                    <main class="study-content-viewer">
+                        <template x-if="getActiveStudyContent()">
+                            <div>
+                                <div class="viewer-header">
+                                    <span class="viewer-topic-label" x-text="getTopicName(activeStudyTopic)"></span>
+                                    <h2 class="viewer-title" x-text="getActiveStudyContent().title"></h2>
+                                </div>
+                                <div class="study-content-body" x-html="getActiveStudyContent().content"></div>
+                            </div>
+                        </template>
+
+                        <template x-if="!getActiveStudyContent()">
+                            <div style="text-align: center; color: #666; padding-top: 50px;">
+                                <p>Select a topic from the menu on the left to begin studying.</p>
+                            </div>
+                        </template>
+                    </main>
+
                 </div>
             </div>
         </div>
 
         <hr class="divider" x-show="!examStarted">
 
-        <!-- Mode Selection (shown before exam starts) -->
         <div x-show="!examStarted" class="mode-selection">
             <h2 class="section-title">Select Exam Mode</h2>
-            
+
             <div class="mode-options">
                 <label class="mode-option">
                     <input type="radio" name="examMode" value="full" x-model="examMode" @change="updatePreview()">
@@ -101,24 +116,23 @@
                         <p>Random questions maintaining official topic ratios (max 60 questions)</p>
                     </div>
                 </label>
-                
+
                 <label class="mode-option">
                     <input type="radio" name="examMode" value="topic" x-model="examMode" @change="updatePreview()">
                     <div class="mode-card">
                         <strong>Questions by topics</strong>
-                        <p>Study all questions from selected topics (no limit)</p>
+                        <p>Random questions from selected topics</p>
                     </div>
                 </label>
             </div>
 
-            <!-- Topic Selection (shown for topic mode) -->
             <div x-show="examMode === 'topic'" class="topic-selection">
                 <h3 class="subsection-title">Select Topics</h3>
                 <div class="topics-grid">
                     <template x-for="topicNum in [1,2,3,4,5,6,7,8]" :key="topicNum">
                         <label class="topic-checkbox">
-                            <input 
-                                type="checkbox" 
+                            <input
+                                type="checkbox"
                                 :value="topicNum"
                                 x-model="selectedTopics"
                                 @change="updatePreview()"
@@ -132,13 +146,12 @@
                 </div>
             </div>
 
-            <!-- Preview -->
             <div x-show="examMode" class="exam-preview">
                 <h3 class="subsection-title">Exam Preview</h3>
                 <div class="preview-info">
                     <p><strong>Mode:</strong> <span x-text="getModeName()"></span></p>
                     <p x-show="selectedTopics.length > 0">
-                        <strong>Selected Topics:</strong> 
+                        <strong>Selected Topics:</strong>
                         <span x-text="selectedTopics.map(t => getTopicName(t)).join(', ')"></span>
                     </p>
                     <p><strong>Estimated Questions:</strong> <span x-text="estimatedQuestions"></span></p>
@@ -156,15 +169,12 @@
             </button>
         </div>
 
-        <!-- Exam Title -->
         <h1 x-show="examStarted" class="exam-title" x-text="examTitle"></h1>
 
-        <!-- Loading State -->
         <div x-show="loading" class="loading">
             <p>Generating exam...</p>
         </div>
 
-        <!-- Error State -->
         <div x-show="error" class="error">
             <p x-text="error"></p>
         </div>
@@ -184,13 +194,13 @@
                         <!-- Options -->
                         <div class="options-container">
                             <template x-for="key in getSortedOptionKeys(question.options)" :key="key">
-                                <label class="option-label" 
+                                <label class="option-label"
                                        :class="{
                                            'correct': submitted && showAnswers[question.id] && question.correctAnswer.includes(key),
                                            'incorrect': submitted && showAnswers[question.id] && selectedAnswers[question.id] && selectedAnswers[question.id].includes(key) && !question.correctAnswer.includes(key)
                                        }">
-                                    <input 
-                                        type="checkbox" 
+                                    <input
+                                        type="checkbox"
                                         :name="'q_' + question.id"
                                         :value="key"
                                         x-model="selectedAnswers[question.id]"
@@ -204,7 +214,7 @@
                         </div>
 
                         <!-- Answer Button -->
-                        <button 
+                        <button
                             class="answer-button"
                             @click="toggleAnswer(question.id)"
                             x-text="showAnswers[question.id] ? 'Hide Answer' : 'Answer'"
@@ -212,7 +222,7 @@
 
                         <!-- Explanation -->
                         <div x-show="showAnswers[question.id]" class="explanation">
-                            <strong>Correct Answer(s):</strong> 
+                            <strong>Correct Answer(s):</strong>
                             <span x-text="question.correctAnswer.join(', ')"></span>
                             <br><br>
                             <strong>Explanation:</strong>
@@ -224,8 +234,8 @@
 
             <!-- Submit Button -->
             <div class="submit-container">
-                <button 
-                    class="submit-button" 
+                <button
+                    class="submit-button"
                     @click="submitExam()"
                     x-show="!submitted"
                 >
