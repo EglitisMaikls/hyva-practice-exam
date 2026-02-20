@@ -215,24 +215,17 @@ function exam() {
             this.topicStudyOpen = !this.topicStudyOpen;
 
             if (this.topicStudyOpen) {
-                // Rule: Open Topic 1 by default if nothing is selected,
-                // OR ensure only the active topic is expanded if returning.
-
-                // If we want to strictly reset to Topic 1.1 every time we open the "Study by Topic" section:
                 this.expandedStudyTopics = { 1: true };
                 this.activeStudyTopic = 1;
                 this.activeStudySubsection = 0;
-
-                // Alternatively, if you wanted to remember the last position but ensure accordion style:
-                /*
-                if (!this.activeStudyTopic) {
-                    this.activeStudyTopic = 1;
-                    this.activeStudySubsection = 0;
-                }
-                this.expandedStudyTopics = {};
-                this.expandedStudyTopics[this.activeStudyTopic] = true;
-                */
             }
+        },
+
+        /**
+         * Close topic study and return to mode selection view
+         */
+        closeTopicStudy() {
+            this.topicStudyOpen = false;
         },
 
         setActiveStudy(topicNum, subIndex) {

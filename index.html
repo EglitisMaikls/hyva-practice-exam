@@ -28,9 +28,14 @@
 <body>
     <div class="container" x-data="exam()" x-init="init()" x-effect="document.documentElement.classList.toggle('dark-mode', darkMode)">
         <div class="dark-mode-toggle">
-            <button @click="toggleDarkMode()" class="theme-toggle-button" :aria-label="darkMode ? 'Switch to light mode' : 'Switch to dark mode'">
-                <span x-show="!darkMode">🌙</span>
-                <span x-show="darkMode">☀️</span>
+            <button type="button"
+                    @click="toggleDarkMode()"
+                    class="theme-toggle-switch"
+                    :aria-label="darkMode ? 'Switch to light mode' : 'Switch to dark mode'"
+                    :aria-pressed="darkMode">
+                <span class="theme-toggle-track">
+                    <span class="theme-toggle-knob"></span>
+                </span>
             </button>
         </div>
         <div class="instructions">
@@ -43,12 +48,17 @@
         <hr class="divider">
 
         <div x-show="!examStarted" class="topic-study-section">
-            <div class="mode-option" @click="toggleTopicStudy()" :class="{ 'is-expanded': topicStudyOpen }">
+            <div x-show="!topicStudyOpen" class="mode-option" @click="toggleTopicStudy()" :class="{ 'is-expanded': topicStudyOpen }">
                 <div class="mode-card mode-card-clickable">
                     <strong>Study by Topic</strong>
                     <p>Browse topics and subsections from the Certification Guide. Explanations and examples are added from the official Hyva documentation.</p>
-                    <span class="expand-indicator" x-text="topicStudyOpen ? '▼' : '▶'"></span>
                 </div>
+            </div>
+
+            <div x-show="topicStudyOpen" class="back-to-selection-container">
+                <button @click="closeTopicStudy()" class="back-to-selection-button" type="button">
+                    Back to Main
+                </button>
             </div>
 
             <div x-show="topicStudyOpen" class="study-by-topic-content" style="margin-top: 20px;">
@@ -103,16 +113,15 @@
             </div>
         </div>
 
-        <hr class="divider" x-show="!examStarted">
+        <hr class="divider" x-show="!examStarted && !topicStudyOpen">
 
-        <div x-show="!examStarted" class="mode-selection">
-            <h2 class="section-title">Select Exam Mode</h2>
+        <div x-show="!examStarted && !topicStudyOpen" class="mode-selection">
 
             <div class="mode-options">
                 <label class="mode-option">
                     <input type="radio" name="examMode" value="full" x-model="examMode" @change="updatePreview()">
                     <div class="mode-card">
-                        <strong>Full Exam</strong>
+                        <strong>Full Exam mode</strong>
                         <p>Random questions maintaining official topic ratios (max 60 questions)</p>
                     </div>
                 </label>
@@ -165,7 +174,7 @@
         <!-- Back to Mode Selection Button -->
         <div x-show="examStarted" class="back-to-selection-container">
             <button @click="backToModeSelection()" class="back-to-selection-button">
-                ← Back to Exam Mode Selection
+                Back to Main
             </button>
         </div>
 
@@ -226,7 +235,7 @@
                             <span x-text="question.correctAnswer.join(', ')"></span>
                             <br><br>
                             <strong>Explanation:</strong>
-                            <p x-text="question.explanation"></p>
+                            <div class="explanation-content" x-html="question.explanation"></div>
                         </div>
                     </div>
                 </template>
