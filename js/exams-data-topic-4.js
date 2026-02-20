@@ -21,7 +21,7 @@ window.TOPIC_DATA[4] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "When overriding templates from compatibility modules, you must use the compatibility module name in the theme structure, not the original module name.",
+            "explanation": "<p>When overriding templates from compatibility modules, you must use the compatibility module name in the theme structure, not the original module name.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/compatibility-modules/technical-deep-dive.html\" target=\"_blank\" rel=\"noopener\">Technical Deep-Dive – Overriding a Compatibility Template in a Theme</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/compatibility-modules/index.html\" target=\"_blank\" rel=\"noopener\">Compatibility Modules</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0035",
             "topic": 4,
@@ -39,7 +39,7 @@ window.TOPIC_DATA[4] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "The first step is to understand what the x-magento-init script does, then recreate that functionality using Alpine.js components and data attributes.",
+            "explanation": "<p>The first step is to understand what the x-magento-init script does, then recreate that functionality using Alpine.js components and data attributes.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/compatibility-modules/from-luma-to-hyva/migrating-js-and-templates.html\" target=\"_blank\" rel=\"noopener\">Migrating Luma JavaScript and Templates</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0036",
             "topic": 4,
@@ -57,7 +57,7 @@ window.TOPIC_DATA[4] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "jQuery should be refactored to vanilla JavaScript by converting selectors to native DOM methods and replacing jQuery methods with their JavaScript equivalents.",
+            "explanation": "<p>jQuery should be refactored to vanilla JavaScript by converting selectors to native DOM methods and replacing jQuery methods with their JavaScript equivalents.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/compatibility-modules/from-luma-to-hyva/migrating-js-and-templates.html\" target=\"_blank\" rel=\"noopener\">Migrating Luma JavaScript and Templates – Native Equivalents for jQuery</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0037",
             "topic": 4,
@@ -75,7 +75,7 @@ window.TOPIC_DATA[4] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "The hyva-themes.json file is used to register modules with the compatibility module registry, allowing Hyv\u00e4 to recognize and process compatibility modules correctly.",
+            "explanation": "<p>The hyva-themes.json file is used to register modules with the compatibility module registry, allowing Hyv\u00e4 to recognize and process compatibility modules correctly.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/compatibility-modules/index.html\" target=\"_blank\" rel=\"noopener\">Compatibility Modules – Registering a module for inclusion in hyva-themes.json</a> (Hyv\u00e4 docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/compatibility-modules/getting-started.html\" target=\"_blank\" rel=\"noopener\">Getting Started with Compatibility Modules</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0038",
             "topic": 4,
@@ -93,7 +93,7 @@ window.TOPIC_DATA[4] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "To replace Knockout.js, convert observables to Alpine data properties, replace data-bind attributes with Alpine directives (x-show, x-text, etc.), and refactor computed properties to Alpine methods.",
+            "explanation": "<p>To replace Knockout.js, convert observables to Alpine data properties, replace data-bind attributes with Alpine directives (x-show, x-text, etc.), and refactor computed properties to Alpine methods.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/compatibility-modules/from-luma-to-hyva/migrating-js-and-templates.html\" target=\"_blank\" rel=\"noopener\">Migrating Luma JavaScript and Templates</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0039",
             "topic": 4,
@@ -111,7 +111,7 @@ window.TOPIC_DATA[4] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "Compatibility modules bridge the gap between third-party Magento extensions (designed for Luma) and Hyv\u00e4 themes, providing necessary templates and JavaScript adaptations.",
+            "explanation": "<p>Compatibility modules bridge the gap between third-party Magento extensions (designed for Luma) and Hyv\u00e4 themes, providing necessary templates and JavaScript adaptations.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/compatibility-modules/index.html\" target=\"_blank\" rel=\"noopener\">Compatibility Modules</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0040",
             "topic": 4,
@@ -129,7 +129,7 @@ window.TOPIC_DATA[4] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "x-magento-init scripts should be replaced with Alpine.js components that use data attributes for configuration, maintaining functionality while following Hyv\u00e4 best practices.",
+            "explanation": "<p>x-magento-init scripts should be replaced with Alpine.js components that use data attributes for configuration, maintaining functionality while following Hyv\u00e4 best practices.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/compatibility-modules/from-luma-to-hyva/migrating-js-and-templates.html\" target=\"_blank\" rel=\"noopener\">Migrating Luma JavaScript and Templates</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0041",
             "topic": 4,
@@ -147,7 +147,7 @@ window.TOPIC_DATA[4] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "The first step is to analyze the jQuery code to understand what it does, then systematically convert selectors (jQuery to querySelector) and methods (jQuery to native JS equivalents).",
+            "explanation": "<p>The first step is to analyze the jQuery code to understand what it does, then systematically convert selectors (jQuery to querySelector) and methods (jQuery to native JS equivalents).</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/compatibility-modules/from-luma-to-hyva/migrating-js-and-templates.html\" target=\"_blank\" rel=\"noopener\">Migrating Luma JavaScript and Templates</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0042",
             "topic": 4,
@@ -165,7 +165,7 @@ window.TOPIC_DATA[4] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "Knockout computed properties should be converted to Alpine getter methods (using get keyword) or Alpine computed properties, maintaining reactive behavior.",
+            "explanation": "<p>Knockout computed properties should be converted to Alpine getter methods (using get keyword) or Alpine computed properties, maintaining reactive behavior.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/compatibility-modules/from-luma-to-hyva/migrating-js-and-templates.html\" target=\"_blank\" rel=\"noopener\">Migrating Luma JavaScript and Templates</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0043",
             "topic": 4,
@@ -183,7 +183,7 @@ window.TOPIC_DATA[4] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "hyva-themes.json stores module registration information and compatibility metadata, allowing Hyv\u00e4 to recognize and properly process compatibility modules.",
+            "explanation": "<p>hyva-themes.json stores module registration information and compatibility metadata, allowing Hyv\u00e4 to recognize and properly process compatibility modules.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/compatibility-modules/technical-deep-dive.html\" target=\"_blank\" rel=\"noopener\">Technical Deep-Dive – Tailwind Asset Merging</a> (Hyv\u00e4 docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/compatibility-modules/getting-started.html\" target=\"_blank\" rel=\"noopener\">Getting Started with Compatibility Modules</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0044",
             "topic": 4,
@@ -201,7 +201,7 @@ window.TOPIC_DATA[4] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "When overriding templates from compatibility modules, you must use the compatibility module's folder name in the theme structure, not the original module name.",
+            "explanation": "<p>When overriding templates from compatibility modules, you must use the compatibility module's folder name in the theme structure, not the original module name.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/compatibility-modules/technical-deep-dive.html\" target=\"_blank\" rel=\"noopener\">Technical Deep-Dive – Overriding a Compatibility Template in a Theme</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0045",
             "topic": 4,

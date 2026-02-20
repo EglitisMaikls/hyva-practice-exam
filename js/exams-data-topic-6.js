@@ -21,7 +21,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "Using Proxy or wrapper functions allows you to extend functionality while maintaining the ability to call the original function, ensuring compatibility with future updates.",
+            "explanation": "<p>Using Proxy or wrapper functions allows you to extend functionality while maintaining the ability to call the original function, ensuring compatibility with future updates.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/patterns/overriding-js.html\" target=\"_blank\" rel=\"noopener\">Overriding JavaScript</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0057",
             "topic": 6,
@@ -39,7 +39,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "Using data attributes allows components to be reusable and configurable without modifying JavaScript code, making them work across different pages and contexts.",
+            "explanation": "<p>Using data attributes allows components to be reusable and configurable without modifying JavaScript code, making them work across different pages and contexts.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-property-mutation.html\" target=\"_blank\" rel=\"noopener\">Property mutation in Alpine CSP</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0058",
             "topic": 6,
@@ -57,7 +57,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "init-external-scripts and facades allow deferred loading of external scripts, improving performance metrics like TBT and INP by reducing main thread blocking.",
+            "explanation": "<p>init-external-scripts and facades allow deferred loading of external scripts, improving performance metrics like TBT and INP by reducing main thread blocking.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/patterns/loading-external-javascript.html\" target=\"_blank\" rel=\"noopener\">Loading External JavaScript</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0059",
             "topic": 6,
@@ -75,7 +75,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "Using events (Alpine's $dispatch and @event listeners) allows components to communicate without nesting, enabling better component organization and reusability.",
+            "explanation": "<p>Using events (Alpine's $dispatch and @event listeners) allows components to communicate without nesting, enabling better component organization and reusability.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/patterns/communication-between-alpine-components.html\" target=\"_blank\" rel=\"noopener\">Communication between Alpine Components</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0060",
             "topic": 6,
@@ -94,7 +94,7 @@ window.TOPIC_DATA[6] = {
                 "C",
                 "A"
             ],
-            "explanation": "Removing unsafe-eval forbids the use of eval() and dynamic function creation (like new Function()), which is required for strict CSP compliance.",
+            "explanation": "<p>Removing unsafe-eval forbids the use of eval() and dynamic function creation (like new Function()), which is required for strict CSP compliance.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/csp-compatibility.html\" target=\"_blank\" rel=\"noopener\">CSP compatibility</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": true,
             "id": "q_0061",
             "topic": 6,
@@ -113,7 +113,7 @@ window.TOPIC_DATA[6] = {
                 "B",
                 "A"
             ],
-            "explanation": "Removing unsafe-eval forbids eval() and dynamic function creation (new Function()). It does not prevent script tag execution or DOM manipulation of script elements.",
+            "explanation": "<p>Removing unsafe-eval forbids eval() and dynamic function creation (new Function()). It does not prevent script tag execution or DOM manipulation of script elements.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/csp-compatibility.html\" target=\"_blank\" rel=\"noopener\">CSP compatibility</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": true,
             "id": "q_0062",
             "topic": 6,
@@ -131,7 +131,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "CSP-compliant Alpine code avoids inline scripts, uses Alpine.data() for component definitions, and passes data via attributes rather than inline expressions.",
+            "explanation": "<p>CSP-compliant Alpine code avoids inline scripts, uses Alpine.data() for component definitions, and passes data via attributes rather than inline expressions.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp.html\" target=\"_blank\" rel=\"noopener\">Alpine.js CSP Build</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0063",
             "topic": 6,
@@ -149,7 +149,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "For CSP compliance, register component functions globally using Alpine.data() rather than using inline function definitions.",
+            "explanation": "<p>For CSP compliance, register component functions globally using Alpine.data() rather than using inline function definitions.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-constructor-functions.html\" target=\"_blank\" rel=\"noopener\">Alpine CSP x-data constructors</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0064",
             "topic": 6,
@@ -167,7 +167,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "x-defer allows deferring Alpine component initialization until conditions like viewport intersection, user interaction, or idle time, improving performance metrics.",
+            "explanation": "<p>x-defer allows deferring Alpine component initialization until conditions like viewport intersection, user interaction, or idle time, improving performance metrics.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-plugins/x-defer.html\" target=\"_blank\" rel=\"noopener\">Alpine.js x-defer plugin</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0065",
             "topic": 6,
@@ -185,7 +185,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "x-defer supports intersect (viewport entry), interact (user interaction), idle (browser idle), and event:eventname (custom event) triggers.",
+            "explanation": "<p>x-defer supports intersect (viewport entry), interact (user interaction), idle (browser idle), and event:eventname (custom event) triggers.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-plugins/x-defer.html\" target=\"_blank\" rel=\"noopener\">Alpine.js x-defer plugin</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0066",
             "topic": 6,
@@ -203,7 +203,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "x-intersect triggers JavaScript when an element scrolls into or out of the browser viewport, useful for lazy loading and performance optimization.",
+            "explanation": "<p>x-intersect triggers JavaScript when an element scrolls into or out of the browser viewport, useful for lazy loading and performance optimization.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-plugins/x-intersect.html\" target=\"_blank\" rel=\"noopener\">Alpine.js x-intersect plugin</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0067",
             "topic": 6,
@@ -222,7 +222,7 @@ window.TOPIC_DATA[6] = {
                 "D",
                 "B"
             ],
-            "explanation": "Using x-defer=\"interact\" or x-intersect to defer loading the widget reduces initial DOM size. Reserving space (A) helps CLS but doesn't reduce DOM size. Lazy images (C) helps performance but doesn't address DOM size.",
+            "explanation": "<p>Using x-defer=\"interact\" or x-intersect to defer loading the widget reduces initial DOM size. Reserving space (A) helps CLS but doesn't reduce DOM size. Lazy images (C) helps performance but doesn't address DOM size.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-plugins/x-defer.html\" target=\"_blank\" rel=\"noopener\">Alpine.js x-defer plugin</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-plugins/x-intersect.html\" target=\"_blank\" rel=\"noopener\">Alpine.js x-intersect plugin</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": true,
             "id": "q_0068",
             "topic": 6,
@@ -240,7 +240,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "CSP-compliant Alpine code uses data attributes to pass arguments. The method reads values from event.target.dataset instead of receiving direct arguments.",
+            "explanation": "<p>CSP-compliant Alpine code uses data attributes to pass arguments. The method reads values from event.target.dataset instead of receiving direct arguments.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-property-mutation.html\" target=\"_blank\" rel=\"noopener\">Property mutation in Alpine CSP</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0069",
             "topic": 6,
@@ -258,7 +258,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "CSP-compliant x-for must iterate over a property directly (e.g., x-for=\"item in items\"), not over method calls with arguments.",
+            "explanation": "<p>CSP-compliant x-for must iterate over a property directly (e.g., x-for=\"item in items\"), not over method calls with arguments.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-x-for.html\" target=\"_blank\" rel=\"noopener\">Alpine CSP x-for</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0070",
             "topic": 6,
@@ -276,7 +276,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "Using Proxy or wrapper functions allows you to extend functionality while calling the original function, ensuring compatibility with future Hyv\u00e4 updates.",
+            "explanation": "<p>Using Proxy or wrapper functions allows you to extend functionality while calling the original function, ensuring compatibility with future Hyv\u00e4 updates.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/patterns/overriding-js.html\" target=\"_blank\" rel=\"noopener\">Overriding JavaScript</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0071",
             "topic": 6,
@@ -294,7 +294,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "init-external-scripts allows deferring external script loading until user interaction or other triggers, reducing initial page load time and improving TBT and INP metrics.",
+            "explanation": "<p>init-external-scripts allows deferring external script loading until user interaction or other triggers, reducing initial page load time and improving TBT and INP metrics.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/patterns/loading-external-javascript.html\" target=\"_blank\" rel=\"noopener\">Loading External JavaScript</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0072",
             "topic": 6,
@@ -312,7 +312,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Deferring component initialization and minimizing DOM depth helps reduce excessive DOM size, improving performance metrics and browser rendering speed.",
+            "explanation": "<p>Deferring component initialization and minimizing DOM depth helps reduce excessive DOM size, improving performance metrics and browser rendering speed.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-plugins/x-defer.html\" target=\"_blank\" rel=\"noopener\">Alpine.js x-defer plugin</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-plugins/x-intersect.html\" target=\"_blank\" rel=\"noopener\">Alpine.js x-intersect plugin</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0073",
             "topic": 6,
@@ -330,7 +330,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "x-defer=\"idle\" uses window.requestIdleCallback to initialize when the browser is idle, with a configurable timeout fallback (default 4000ms).",
+            "explanation": "<p>x-defer=\"idle\" uses window.requestIdleCallback to initialize when the browser is idle, with a configurable timeout fallback (default 4000ms).</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-plugins/x-defer.html\" target=\"_blank\" rel=\"noopener\">Alpine.js x-defer plugin</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0074",
             "topic": 6,
@@ -348,7 +348,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Using data attributes for configuration makes components reusable and configurable without modifying JavaScript code, enabling use across different pages and contexts.",
+            "explanation": "<p>Using data attributes for configuration makes components reusable and configurable without modifying JavaScript code, enabling use across different pages and contexts.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-property-mutation.html\" target=\"_blank\" rel=\"noopener\">Property mutation in Alpine CSP</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0075",
             "topic": 6,
@@ -366,7 +366,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "PCI-DSS 4.0 requires strict CSP to prevent modern credit card skimming attacks that inject JavaScript to redirect customers to phishing sites mimicking legitimate payment service providers.",
+            "explanation": "<p>PCI-DSS 4.0 requires strict CSP to prevent modern credit card skimming attacks that inject JavaScript to redirect customers to phishing sites mimicking legitimate payment service providers.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/index.html\" target=\"_blank\" rel=\"noopener\">Content Security Policy (CSP) for Hyvä Themes</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0076",
             "topic": 6,
@@ -384,7 +384,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "PCI-DSS 4.0 requires strict CSP (without unsafe-eval and unsafe-inline) on payment-related pages starting April 1, 2025.",
+            "explanation": "<p>PCI-DSS 4.0 requires strict CSP (without unsafe-eval and unsafe-inline) on payment-related pages starting April 1, 2025.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/index.html\" target=\"_blank\" rel=\"noopener\">Content Security Policy (CSP) for Hyvä Themes</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0077",
             "topic": 6,
@@ -402,7 +402,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "Alpine CSP eliminates the need for unsafe-eval by restricting HTML attributes to read-only property access and method execution, without allowing inline expressions or transformations.",
+            "explanation": "<p>Alpine CSP eliminates the need for unsafe-eval by restricting HTML attributes to read-only property access and method execution, without allowing inline expressions or transformations.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp.html\" target=\"_blank\" rel=\"noopener\">Alpine.js CSP Build</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0078",
             "topic": 6,
@@ -420,7 +420,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "x-model requires dynamic function creation to handle two-way data binding, which relies on unsafe-eval. CSP-compliant code must use explicit event handlers (@input) instead.",
+            "explanation": "<p>x-model requires dynamic function creation to handle two-way data binding, which relies on unsafe-eval. CSP-compliant code must use explicit event handlers (@input) instead.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-x-model.html\" target=\"_blank\" rel=\"noopener\">Alpine CSP x-model</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0079",
             "topic": 6,
@@ -438,7 +438,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "CSP-compliant code requires registering component functions with Alpine.data() during the alpine:init event, then referencing them by name in x-data without calling them.",
+            "explanation": "<p>CSP-compliant code requires registering component functions with Alpine.data() during the alpine:init event, then referencing them by name in x-data without calling them.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-constructor-functions.html\" target=\"_blank\" rel=\"noopener\">Alpine CSP x-data constructors</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0080",
             "topic": 6,
@@ -456,7 +456,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "Alpine CSP does not support inline expressions like negation. You must create a method (e.g., isNotOpen() { return !this.open; }) and use that method in the binding.",
+            "explanation": "<p>Alpine CSP does not support inline expressions like negation. You must create a method (e.g., isNotOpen() { return !this.open; }) and use that method in the binding.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-properties.html\" target=\"_blank\" rel=\"noopener\">Component properties in Alpine CSP</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0081",
             "topic": 6,
@@ -474,7 +474,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "Ternary expressions must be converted to methods in Alpine CSP. Create a method that returns the appropriate value based on component state.",
+            "explanation": "<p>Ternary expressions must be converted to methods in Alpine CSP. Create a method that returns the appropriate value based on component state.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-properties.html\" target=\"_blank\" rel=\"noopener\">Component properties in Alpine CSP</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0082",
             "topic": 6,
@@ -492,7 +492,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "Alpine CSP requires state changes to be in methods rather than inline expressions. Create methods like close() that modify component state.",
+            "explanation": "<p>Alpine CSP requires state changes to be in methods rather than inline expressions. Create methods like close() that modify component state.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-property-mutation.html\" target=\"_blank\" rel=\"noopener\">Property mutation in Alpine CSP</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0083",
             "topic": 6,
@@ -510,7 +510,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "Hyv\u00e4 uses nonces (random values) on uncached pages and SHA256 hashes of script content on cached pages to authorize inline scripts without unsafe-inline.",
+            "explanation": "<p>Hyv\u00e4 uses nonces (random values) on uncached pages and SHA256 hashes of script content on cached pages to authorize inline scripts without unsafe-inline.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/csp-compatibility.html\" target=\"_blank\" rel=\"noopener\">CSP compatibility</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0084",
             "topic": 6,
@@ -528,7 +528,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "The $hyvaCsp->registerInlineScript() method must be called after each inline script tag to add the nonce or SHA256 hash for CSP authorization.",
+            "explanation": "<p>The $hyvaCsp->registerInlineScript() method must be called after each inline script tag to add the nonce or SHA256 hash for CSP authorization.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/csp-compatibility.html\" target=\"_blank\" rel=\"noopener\">CSP compatibility</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0085",
             "topic": 6,
@@ -546,7 +546,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "When unsafe-eval is disabled in Magento CSP configuration, Hyv\u00e4 automatically uses the Alpine CSP build instead of regular Alpine.js.",
+            "explanation": "<p>When unsafe-eval is disabled in Magento CSP configuration, Hyv\u00e4 automatically uses the Alpine CSP build instead of regular Alpine.js.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/csp-magento-configuration.html\" target=\"_blank\" rel=\"noopener\">Configuring CSP in Magento</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0086",
             "topic": 6,
@@ -564,7 +564,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "The PHP-based FPC backend does not store CSP headers with cached content, so when pages are served from cache, inline scripts are not authorized. Varnish\/Fastly cache headers properly.",
+            "explanation": "<p>The PHP-based FPC backend does not store CSP headers with cached content, so when pages are served from cache, inline scripts are not authorized. Varnish\/Fastly cache headers properly.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/csp-and-block-caching.html\" target=\"_blank\" rel=\"noopener\">CSP & block_html Cache</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0087",
             "topic": 6,
@@ -582,7 +582,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "Alpine CSP build only exists for Alpine v3. Themes using Alpine v2 must upgrade to v3 before implementing CSP compatibility.",
+            "explanation": "<p>Alpine CSP build only exists for Alpine v3. Themes using Alpine v2 must upgrade to v3 before implementing CSP compatibility.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp.html\" target=\"_blank\" rel=\"noopener\">Alpine.js CSP Build</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0088",
             "topic": 6,
@@ -600,7 +600,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "Open browser developer console and run Alpine.version to check the Alpine.js version. If it starts with \"2\", upgrade is needed for CSP compatibility.",
+            "explanation": "<p>Open browser developer console and run Alpine.version to check the Alpine.js version. If it starts with \"2\", upgrade is needed for CSP compatibility.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp.html\" target=\"_blank\" rel=\"noopener\">Alpine.js CSP Build</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0089",
             "topic": 6,
@@ -618,7 +618,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "CSP-compliant code uses data attributes to pass arguments. The method reads values from event.target.dataset instead of receiving direct function arguments.",
+            "explanation": "<p>CSP-compliant code uses data attributes to pass arguments. The method reads values from event.target.dataset instead of receiving direct function arguments.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-property-mutation.html\" target=\"_blank\" rel=\"noopener\">Property mutation in Alpine CSP</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0090",
             "topic": 6,
@@ -636,7 +636,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "x-for in Alpine CSP cannot use method calls with arguments in the iterator expression. You must iterate over a property directly (e.g., x-for=\"item in items\" not x-for=\"item in getItems('category')\").",
+            "explanation": "<p>x-for in Alpine CSP cannot use method calls with arguments in the iterator expression. You must iterate over a property directly (e.g., x-for=\"item in items\" not x-for=\"item in getItems('category')\").</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-x-for.html\" target=\"_blank\" rel=\"noopener\">Alpine CSP x-for</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0091",
             "topic": 6,
@@ -655,7 +655,7 @@ window.TOPIC_DATA[6] = {
                 "D",
                 "A"
             ],
-            "explanation": "x-show with property references and event handling work identically. x-model is not supported in CSP, and inline expressions with negation require methods in CSP.",
+            "explanation": "<p>x-show with property references and event handling work identically. x-model is not supported in CSP, and inline expressions with negation require methods in CSP.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp.html\" target=\"_blank\" rel=\"noopener\">Alpine.js CSP Build</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-x-model.html\" target=\"_blank\" rel=\"noopener\">Alpine CSP x-model</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": true,
             "id": "q_0092",
             "topic": 6,
@@ -673,7 +673,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Writing CSP-compatible code from the start means avoiding inline expressions, using Alpine.data() for component registration, and passing data via attributes rather than inline function calls.",
+            "explanation": "<p>Writing CSP-compatible code from the start means avoiding inline expressions, using Alpine.data() for component registration, and passing data via attributes rather than inline function calls.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp.html\" target=\"_blank\" rel=\"noopener\">Alpine.js CSP Build</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0093",
             "topic": 6,
@@ -691,7 +691,7 @@ window.TOPIC_DATA[6] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Checkout pages definitively require strict CSP. The exact scope for pages with in-context payment buttons (PayPal Express, Apple Pay) depends on payment service provider requirements and merchant location.",
+            "explanation": "<p>Checkout pages definitively require strict CSP. The exact scope for pages with in-context payment buttons (PayPal Express, Apple Pay) depends on payment service provider requirements and merchant location.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/index.html\" target=\"_blank\" rel=\"noopener\">Content Security Policy (CSP) for Hyvä Themes</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0094",
             "topic": 6,

@@ -21,7 +21,7 @@ window.TOPIC_DATA[5] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "The extends section in tailwind.config.js allows you to customize the color theme while maintaining compatibility with Hyv\u00e4 updates. This is the recommended approach.",
+            "explanation": "<p>The extends section in tailwind.config.js allows you to customize the color theme while maintaining compatibility with Hyv\u00e4 updates. This is the recommended approach.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-tailwindcss/css-variables-plus-tailwindcss.html\" target=\"_blank\" rel=\"noopener\">CSS Variables + TailwindCSS</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0046",
             "topic": 5,
@@ -39,7 +39,7 @@ window.TOPIC_DATA[5] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "CSS variables allow you to customize theme colors and other values without modifying templates, making upgrades easier and maintaining separation of concerns.",
+            "explanation": "<p>CSS variables allow you to customize theme colors and other values without modifying templates, making upgrades easier and maintaining separation of concerns.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-tailwindcss/css-variables-plus-tailwindcss.html\" target=\"_blank\" rel=\"noopener\">CSS Variables + TailwindCSS</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0047",
             "topic": 5,
@@ -57,7 +57,7 @@ window.TOPIC_DATA[5] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Using local font files with size-adjust and ascent-override allows the browser to reserve space correctly without requiring font preloading, improving performance metrics like CLS.",
+            "explanation": "<p>Using local font files with size-adjust and ascent-override allows the browser to reserve space correctly without requiring font preloading, improving performance metrics like CLS.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/faqs/how-to-custom-fonts.html\" target=\"_blank\" rel=\"noopener\">Using custom fonts with Hyv\u00e4</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0048",
             "topic": 5,
@@ -75,7 +75,7 @@ window.TOPIC_DATA[5] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "The extends section allows you to add to or override specific parts of the Tailwind configuration while keeping all other defaults intact.",
+            "explanation": "<p>The extends section allows you to add to or override specific parts of the Tailwind configuration while keeping all other defaults intact.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-tailwindcss/css-variables-plus-tailwindcss.html\" target=\"_blank\" rel=\"noopener\">CSS Variables + TailwindCSS</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0049",
             "topic": 5,
@@ -93,7 +93,7 @@ window.TOPIC_DATA[5] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Breakpoints can be customized by extending the screens configuration in tailwind.config.js, allowing you to define custom breakpoint values while maintaining Hyv\u00e4 compatibility.",
+            "explanation": "<p>Breakpoints can be customized by extending the screens configuration in tailwind.config.js, allowing you to define custom breakpoint values while maintaining Hyv\u00e4 compatibility.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-tailwindcss/sharing-common-css-between-themes.html\" target=\"_blank\" rel=\"noopener\">Sharing common CSS between themes</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0050",
             "topic": 5,
@@ -111,7 +111,7 @@ window.TOPIC_DATA[5] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "size-adjust scales the custom font to match the fallback font's metrics, preventing layout shift (CLS) while the custom font loads.",
+            "explanation": "<p>size-adjust scales the custom font to match the fallback font's metrics, preventing layout shift (CLS) while the custom font loads.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/faqs/how-to-custom-fonts.html\" target=\"_blank\" rel=\"noopener\">Using custom fonts with Hyv\u00e4</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0051",
             "topic": 5,
@@ -129,7 +129,7 @@ window.TOPIC_DATA[5] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "Local font files reduce external DNS lookups and network requests, improving Time to First Byte (TTFB) and overall page load performance.",
+            "explanation": "<p>Local font files reduce external DNS lookups and network requests, improving Time to First Byte (TTFB) and overall page load performance.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/faqs/how-to-custom-fonts.html\" target=\"_blank\" rel=\"noopener\">Using custom fonts with Hyv\u00e4</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0052",
             "topic": 5,
@@ -147,7 +147,7 @@ window.TOPIC_DATA[5] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "ascent-override adjusts the font's ascent metric to match the fallback font, preventing layout shift by ensuring consistent line heights during font loading.",
+            "explanation": "<p>ascent-override adjusts the font's ascent metric to match the fallback font, preventing layout shift by ensuring consistent line heights during font loading.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/faqs/how-to-custom-fonts.html\" target=\"_blank\" rel=\"noopener\">Using custom fonts with Hyv\u00e4</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0053",
             "topic": 5,
@@ -165,7 +165,7 @@ window.TOPIC_DATA[5] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Tailwind arbitrary values allow direct reference to CSS variables using syntax like text-[var(--color-primary)], providing flexibility for dynamic values.",
+            "explanation": "<p>Tailwind arbitrary values allow direct reference to CSS variables using syntax like text-[var(--color-primary)], providing flexibility for dynamic values.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-tailwindcss/css-variables-plus-tailwindcss.html\" target=\"_blank\" rel=\"noopener\">CSS Variables + TailwindCSS</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0054",
             "topic": 5,
@@ -183,7 +183,7 @@ window.TOPIC_DATA[5] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "twProps and twVar from @hyva-themes\/hyva-modules convert Tailwind config values to CSS variables while preserving opacity modifier functionality.",
+            "explanation": "<p>twProps and twVar from @hyva-themes/hyva-modules convert Tailwind config values to CSS variables while preserving opacity modifier functionality.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-tailwindcss/css-variables-plus-tailwindcss.html\" target=\"_blank\" rel=\"noopener\">CSS Variables + TailwindCSS</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0055",
             "topic": 5,
@@ -201,7 +201,7 @@ window.TOPIC_DATA[5] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "The CMS Tailwind JIT compiler has its own configuration. Both the theme tailwind.config.js and CMS compiler configuration must be updated for classes to be available in CMS content.",
+            "explanation": "<p>The CMS Tailwind JIT compiler has its own configuration. Both the theme tailwind.config.js and CMS compiler configuration must be updated for classes to be available in CMS content.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/cms/using-tailwind-classes-in-cms-content.html\" target=\"_blank\" rel=\"noopener\">Using Tailwind classes in CMS content</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0056",
             "topic": 5,

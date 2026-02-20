@@ -8,7 +8,7 @@ window.TOPIC_DATA = window.TOPIC_DATA || {};
 window.TOPIC_DATA[8] = {
     "topicNumber": 8,
     "topicName": "Hyv\u00e4 Features",
-    "questionCount": 18,
+    "questionCount": 19,
     "questions": [
         {
             "question": "How can multiple modals be used on the same page without naming conflicts?",
@@ -21,7 +21,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "<p>When using multiple modals, each must have a unique name passed to the show() method. The PHP Modal view model's getShowJs() method handles this automatically.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/view-utilities/modal-dialogs/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>When using multiple modals, each must have a unique name passed to the show() method. The PHP Modal view model's getShowJs() method handles this automatically.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/view-utilities/modal-dialogs/index.html\" target=\"_blank\" rel=\"noopener\">Modal dialogs</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0120",
             "topic": 8,
@@ -39,7 +39,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "<p>The show() method returns a promise that resolves when the modal is shown and can be used to chain actions or handle modal lifecycle events.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/view-utilities/modal-dialogs/confirmation-dialogs.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>The show() method returns a promise that resolves when the modal is shown and can be used to chain actions or handle modal lifecycle events.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/view-utilities/modal-dialogs/confirmation-dialogs.html\" target=\"_blank\" rel=\"noopener\">Confirmation dialogs</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0121",
             "topic": 8,
@@ -57,7 +57,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "<p>Since Hyv\u00e4 1.4.0, product sliders use the standard item template. To customize a specific slider, override the template using layout XML with a specific block reference.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/view-utilities/product-sliders.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>Since Hyv\u00e4 1.4.0, product sliders use the standard item template. To customize a specific slider, override the template using layout XML with a specific block reference.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/view-utilities/product-sliders.html\" target=\"_blank\" rel=\"noopener\">Product sliders</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0122",
             "topic": 8,
@@ -75,7 +75,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "<p>The hyva_modal layout handle must be included in the page layout XML to load the modal JavaScript library.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/view-utilities/modal-dialogs/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>The hyva_modal layout handle must be included in the page layout XML to load the modal JavaScript library.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/view-utilities/modal-dialogs/index.html\" target=\"_blank\" rel=\"noopener\">Modal dialogs</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0123",
             "topic": 8,
@@ -93,7 +93,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "<p>The CMS Tailwind JIT compiler has its own configuration. Customizations must be applied to both the theme tailwind.config.js and the CMS compiler configuration for classes to be available in CMS content.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/cms/using-tailwind-classes-in-cms-content.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>The CMS Tailwind JIT compiler has its own configuration. Customizations must be applied to both the theme tailwind.config.js and the CMS compiler configuration for classes to be available in CMS content.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/cms/using-tailwind-classes-in-cms-content.html\" target=\"_blank\" rel=\"noopener\">Using Tailwind classes in CMS content</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0124",
             "topic": 8,
@@ -111,7 +111,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "<p>The hyva_form_validation layout handle must be included to load the form validation library.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>The hyva_form_validation layout handle must be included to load the form validation library.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener\">JavaScript form validation</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0125",
             "topic": 8,
@@ -129,7 +129,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "<p>Browser native HTML5 validation works without JavaScript, provides better accessibility, and integrates with screen readers. However, JS validation offers more customization options.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/html5-input-types.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>Browser native HTML5 validation works without JavaScript, provides better accessibility, and integrates with screen readers. However, JS validation offers more customization options.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/html5-input-types.html\" target=\"_blank\" rel=\"noopener\">HTML5 input types</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0126",
             "topic": 8,
@@ -147,7 +147,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "<p>Custom validation rules are added using hyva.formValidation.addRule(), passing the rule name and a validation function.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>Custom validation rules are added using hyva.formValidation.addRule(), passing the rule name and a validation function.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener\">JavaScript form validation</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0127",
             "topic": 8,
@@ -165,7 +165,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "<p>Input elements should be wrapped in a container with class=\"field field-reserved\" to reserve space for error messages and prevent layout shift.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>Input elements should be wrapped in a container with class=\"field field-reserved\" to reserve space for error messages and prevent layout shift.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener\">JavaScript form validation</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0128",
             "topic": 8,
@@ -183,7 +183,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "<p>Modal content can be dynamically updated by reading data attributes from the trigger element and updating the modal content when show() is called, allowing different content based on context.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/view-utilities/modal-dialogs/loading-modal-contents-with-ajax.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>Modal content can be dynamically updated by reading data attributes from the trigger element and updating the modal content when show() is called, allowing different content based on context.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/view-utilities/modal-dialogs/loading-modal-contents-with-ajax.html\" target=\"_blank\" rel=\"noopener\">Loading modal contents with AJAX</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0129",
             "topic": 8,
@@ -201,7 +201,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "<p>Use Object.assign({}, hyva.modal(), customLogic()) or object spread {...hyva.modal(), ...customLogic()} to merge modal functionality with custom component logic without overwriting modal methods.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/view-utilities/modal-dialogs/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>Use Object.assign({}, hyva.modal(), customLogic()) or object spread {...hyva.modal(), ...customLogic()} to merge modal functionality with custom component logic without overwriting modal methods.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/view-utilities/modal-dialogs/index.html\" target=\"_blank\" rel=\"noopener\">Modal dialogs</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0130",
             "topic": 8,
@@ -219,7 +219,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "<p>The category_ids argument accepts a comma-separated list of category IDs to display products from those categories in the slider.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/view-utilities/product-sliders.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>The category_ids argument accepts a comma-separated list of category IDs to display products from those categories in the slider.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/view-utilities/product-sliders.html\" target=\"_blank\" rel=\"noopener\">Product sliders</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0131",
             "topic": 8,
@@ -237,7 +237,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "<p>The price_from and price_to arguments filter products to show only those within the specified price range in the slider.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/view-utilities/product-sliders.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>The price_from and price_to arguments filter products to show only those within the specified price range in the slider.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/view-utilities/product-sliders.html\" target=\"_blank\" rel=\"noopener\">Product sliders</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0132",
             "topic": 8,
@@ -245,17 +245,17 @@ window.TOPIC_DATA[8] = {
             "type": "multiple_choice"
         },
         {
-            "question": "How can custom validation messages be displayed in Hyv\u00e4 form validation?",
+            "question": "In Hyv\u00e4 Themes, what is the standard method for overriding a default error message for a specific input field using the JS validation library?",
             "options": {
-                "B": "Modify the core validation library",
-                "C": "Use data-msg-VALIDATOR_NAME attributes to override default messages",
-                "D": "Use JavaScript alerts",
-                "A": "Custom messages are not supported"
+                "A": "Custom messages are not supported",
+                "B": "Modify the core validation library logic",
+                "C": "Apply the data-msg-VALIDATOR_NAME attribute to the input element",
+                "D": "Use a JavaScript alert() within the onChange method"
             },
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "<p>The data-msg-VALIDATOR_NAME attribute allows overriding default validator messages. For example, data-msg-required=\"Custom message\" overrides the required validator message.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>The data-msg-VALIDATOR_NAME attribute allows overriding default validator messages. For example, data-msg-required=\"Custom message\" overrides the required validator message.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener\">JavaScript form validation</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0133",
             "topic": 8,
@@ -273,7 +273,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "<p>The field-reserved class reserves space below the input for error messages, preventing Cumulative Layout Shift (CLS) when validation errors appear.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>The field-reserved class reserves space below the input for error messages, preventing Cumulative Layout Shift (CLS) when validation errors appear.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener\">JavaScript form validation</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0134",
             "topic": 8,
@@ -291,7 +291,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "<p>Validation functions can return a Promise that resolves to true (valid) or a message string (invalid), enabling async operations like API calls for validation.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>Validation functions can return a Promise that resolves to true (valid) or a message string (invalid), enabling async operations like API calls for validation.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener\">JavaScript form validation</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0135",
             "topic": 8,
@@ -309,7 +309,7 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "<p>The default timeout for x-defer=\"idle\" is 4000ms, configurable in Hyv\u00e4 Themes > General > Deferred Alpine.js Components > Defer until idle timeout.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-plugins/x-defer.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>The default timeout for x-defer=\"idle\" is 4000ms, configurable in Hyv\u00e4 Themes > General > Deferred Alpine.js Components > Defer until idle timeout.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-plugins/x-defer.html\" target=\"_blank\" rel=\"noopener\">Alpine.js x-defer plugin</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0136",
             "topic": 8,
@@ -327,9 +327,27 @@ window.TOPIC_DATA[8] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "<p>Debugging CMS Tailwind JIT compilation requires checking that classes exist in both configurations, verifying purging/content scanning settings, and ensuring the CMS compiler is processing the correct content.</p><p>Reference: <a href=\"https://docs.hyva.io/hyva-themes/cms/using-tailwind-classes-in-cms-content.html\" target=\"_blank\" rel=\"noopener noreferrer\">View documentation</a></p>",
+            "explanation": "<p>Debugging CMS Tailwind JIT compilation requires checking that classes exist in both configurations, verifying purging/content scanning settings, and ensuring the CMS compiler is processing the correct content.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/cms/using-tailwind-classes-in-cms-content.html\" target=\"_blank\" rel=\"noopener\">Using Tailwind classes in CMS content</a> (Hyv\u00e4 docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0137",
+            "topic": 8,
+            "difficulty": "medium",
+            "type": "multiple_choice"
+        },
+        {
+            "question": "How can hyva.formValidation be used in forms inside CMS blocks or pages when the layout handle hyva_form_validation cannot be used easily?",
+            "options": {
+                "A": "Use jQuery validation instead",
+                "B": "Include the validation code via the {{block}} template filter with Hyva_Theme::page/js/advanced-form-validation.phtml",
+                "C": "Add a custom JavaScript file in the CMS content",
+                "D": "Form validation is not supported in CMS content"
+            },
+            "correctAnswer": [
+                "B"
+            ],
+            "explanation": "<p>With CMS blocks or pages, layout XML cannot add the hyva_form_validation handle. The workaround is to include the form validation code using the {{block}} template filter directive, rendering the main template Hyva_Theme::page/js/advanced-form-validation.phtml inside the CMS HTML content so hyva.formValidation is available.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation-in-cms-content.html\" target=\"_blank\" rel=\"noopener\">JavaScript form validation in CMS content</a> (Hyv\u00e4 docs)</li></ul></div>",
+            "isMultiple": false,
+            "id": "q_0138",
             "topic": 8,
             "difficulty": "medium",
             "type": "multiple_choice"

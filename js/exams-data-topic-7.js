@@ -21,7 +21,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "FCP (First Contentful Paint) measures when the first content is rendered on the screen, indicating when users start seeing content.",
+            "explanation": "<p>FCP (First Contentful Paint) measures when the first content is rendered on the screen, indicating when users start seeing content.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/building-your-theme/preserving-good-google-page-rank-metrics.html\" target=\"_blank\" rel=\"noopener\">Optimizing Core Web Vitals and Google Page Speed</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0095",
             "topic": 7,
@@ -39,7 +39,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "LCP (Largest Contentful Paint) measures when the largest content element (image, text block, etc.) becomes visible, indicating perceived load speed.",
+            "explanation": "<p>LCP (Largest Contentful Paint) measures when the largest content element (image, text block, etc.) becomes visible, indicating perceived load speed.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/building-your-theme/preserving-good-google-page-rank-metrics.html\" target=\"_blank\" rel=\"noopener\">Optimizing Core Web Vitals and Google Page Speed</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0096",
             "topic": 7,
@@ -57,7 +57,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "CLS (Cumulative Layout Shift) measures visual stability by quantifying how much visible content shifts during page load.",
+            "explanation": "<p>CLS (Cumulative Layout Shift) measures visual stability by quantifying how much visible content shifts during page load.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/building-your-theme/preserving-good-google-page-rank-metrics.html\" target=\"_blank\" rel=\"noopener\">Optimizing Core Web Vitals and Google Page Speed</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0097",
             "topic": 7,
@@ -75,7 +75,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "TTFB (Time to First Byte) is the foundation metric - all other metrics (FCP, LCP, INP, etc.) depend on TTFB as content cannot render until the server responds.",
+            "explanation": "<p>TTFB (Time to First Byte) is the foundation metric - all other metrics (FCP, LCP, INP, etc.) depend on TTFB as content cannot render until the server responds.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/faqs/performance-optimization.html\" target=\"_blank\" rel=\"noopener\">Performance optimization</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0098",
             "topic": 7,
@@ -93,7 +93,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "Excessive DOM size can be reduced by deferring non-critical content using Alpine directives like x-defer or x-intersect, loading content only when needed.",
+            "explanation": "<p>Excessive DOM size can be reduced by deferring non-critical content using Alpine directives like x-defer or x-intersect, loading content only when needed.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/faqs/performance-optimization.html\" target=\"_blank\" rel=\"noopener\">Performance optimization</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-plugins/x-defer.html\" target=\"_blank\" rel=\"noopener\">Alpine.js x-defer plugin</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-plugins/x-intersect.html\" target=\"_blank\" rel=\"noopener\">Alpine.js x-intersect plugin</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0099",
             "topic": 7,
@@ -111,7 +111,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "INP (Interaction to Next Paint) measures the time from user interaction (click, tap, keypress) to when the browser can paint the next frame, indicating page responsiveness.",
+            "explanation": "<p>INP (Interaction to Next Paint) measures the time from user interaction (click, tap, keypress) to when the browser can paint the next frame, indicating page responsiveness.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/building-your-theme/preserving-good-google-page-rank-metrics.html\" target=\"_blank\" rel=\"noopener\">Optimizing Core Web Vitals and Google Page Speed</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0100",
             "topic": 7,
@@ -129,7 +129,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "TBT (Total Blocking Time) measures the total amount of time the main thread is blocked, preventing the browser from responding to user input.",
+            "explanation": "<p>TBT (Total Blocking Time) measures the total amount of time the main thread is blocked, preventing the browser from responding to user input.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/faqs/performance-optimization.html\" target=\"_blank\" rel=\"noopener\">Performance optimization</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0101",
             "topic": 7,
@@ -147,7 +147,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "CLS can be improved by reserving space for content that loads later, using font metrics (size-adjust, ascent-override), and avoiding inserting content that pushes existing content down.",
+            "explanation": "<p>CLS can be improved by reserving space for content that loads later, using font metrics (size-adjust, ascent-override), and avoiding inserting content that pushes existing content down.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/building-your-theme/preserving-good-google-page-rank-metrics.html\" target=\"_blank\" rel=\"noopener\">Optimizing Core Web Vitals and Google Page Speed</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0102",
             "topic": 7,
@@ -165,7 +165,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "On product pages, the main product image is typically the largest contentful element. Optimizing its loading (priority, format, size) directly improves LCP.",
+            "explanation": "<p>On product pages, the main product image is typically the largest contentful element. Optimizing its loading (priority, format, size) directly improves LCP.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/building-your-theme/preserving-good-google-page-rank-metrics.html\" target=\"_blank\" rel=\"noopener\">Optimizing Core Web Vitals and Google Page Speed</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0103",
             "topic": 7,
@@ -183,7 +183,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Prioritizing low-hanging fruit (easy fixes with high impact) like image optimization, deferring non-critical scripts, and reducing DOM size provides the best ROI for performance improvements.",
+            "explanation": "<p>Prioritizing low-hanging fruit (easy fixes with high impact) like image optimization, deferring non-critical scripts, and reducing DOM size provides the best ROI for performance improvements.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/faqs/performance-optimization.html\" target=\"_blank\" rel=\"noopener\">Performance optimization</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0104",
             "topic": 7,
@@ -201,7 +201,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Lab data (Lighthouse) provides controlled, reproducible measurements. Field data (CrUX) reflects actual user experiences across different devices, networks, and locations, providing real-world insights.",
+            "explanation": "<p>Lab data (Lighthouse) provides controlled, reproducible measurements. Field data (CrUX) reflects actual user experiences across different devices, networks, and locations, providing real-world insights.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/performance-and-crux.html\" target=\"_blank\" rel=\"noopener\">Performance and CrUX</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/faqs/performance-optimization.html\" target=\"_blank\" rel=\"noopener\">Performance optimization</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0105",
             "topic": 7,
@@ -219,7 +219,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "CrUX (Chrome User Experience Report) is a public dataset providing field data from actual Chrome users, showing real-world performance metrics across different conditions.",
+            "explanation": "<p>CrUX (Chrome User Experience Report) is a public dataset providing field data from actual Chrome users, showing real-world performance metrics across different conditions.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/performance-and-crux.html\" target=\"_blank\" rel=\"noopener\">Performance and CrUX</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0106",
             "topic": 7,
@@ -237,7 +237,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "PerformanceObserver can observe the 'largest-contentful-paint' event type to measure LCP candidates and determine when the largest contentful element is rendered.",
+            "explanation": "<p>PerformanceObserver can observe the 'largest-contentful-paint' event type to measure LCP candidates and determine when the largest contentful element is rendered.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/performance-and-crux.html\" target=\"_blank\" rel=\"noopener\">Performance and CrUX</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0107",
             "topic": 7,
@@ -255,7 +255,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "The elementtiming attribute marks specific elements (like images or text blocks) so they can be tracked by PerformanceObserver, providing precise timing data for those elements.",
+            "explanation": "<p>The elementtiming attribute marks specific elements (like images or text blocks) so they can be tracked by PerformanceObserver, providing precise timing data for those elements.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/performance-and-crux.html\" target=\"_blank\" rel=\"noopener\">Performance and CrUX</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0108",
             "topic": 7,
@@ -273,7 +273,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "TTFB (Time to First Byte) is foundational. All other metrics (FCP, LCP, INP, CLS) depend on TTFB because the browser cannot start rendering until it receives the first byte from the server.",
+            "explanation": "<p>TTFB (Time to First Byte) is foundational. All other metrics (FCP, LCP, INP, CLS) depend on TTFB because the browser cannot start rendering until it receives the first byte from the server.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/building-your-theme/preserving-good-google-page-rank-metrics.html\" target=\"_blank\" rel=\"noopener\">Optimizing Core Web Vitals and Google Page Speed</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0109",
             "topic": 7,
@@ -291,7 +291,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "LCP is typically the main product image. Improve it by using loading=\"eager\" or fetchpriority=\"high\", optimizing image format and size, and ensuring it loads quickly.",
+            "explanation": "<p>LCP is typically the main product image. Improve it by using loading=\"eager\" or fetchpriority=\"high\", optimizing image format and size, and ensuring it loads quickly.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/building-your-theme/preserving-good-google-page-rank-metrics.html\" target=\"_blank\" rel=\"noopener\">Optimizing Core Web Vitals and Google Page Speed</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0110",
             "topic": 7,
@@ -309,7 +309,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "CLS occurs when visible content shifts during page load. Prevent it by reserving space for dynamic content, using font metrics to match fallback fonts, and avoiding content insertion that pushes existing content.",
+            "explanation": "<p>CLS occurs when visible content shifts during page load. Prevent it by reserving space for dynamic content, using font metrics to match fallback fonts, and avoiding content insertion that pushes existing content.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/building-your-theme/preserving-good-google-page-rank-metrics.html\" target=\"_blank\" rel=\"noopener\">Optimizing Core Web Vitals and Google Page Speed</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0111",
             "topic": 7,
@@ -327,7 +327,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "INP measures the time from user interaction to when the browser can paint the next frame. It indicates page responsiveness and user experience quality.",
+            "explanation": "<p>INP measures the time from user interaction to when the browser can paint the next frame. It indicates page responsiveness and user experience quality.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/building-your-theme/preserving-good-google-page-rank-metrics.html\" target=\"_blank\" rel=\"noopener\">Optimizing Core Web Vitals and Google Page Speed</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0112",
             "topic": 7,
@@ -345,7 +345,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "Improve INP by deferring non-critical scripts (x-defer), breaking up long-running tasks, optimizing event handlers, and reducing main thread blocking time.",
+            "explanation": "<p>Improve INP by deferring non-critical scripts (x-defer), breaking up long-running tasks, optimizing event handlers, and reducing main thread blocking time.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/faqs/performance-optimization.html\" target=\"_blank\" rel=\"noopener\">Performance optimization</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-plugins/x-defer.html\" target=\"_blank\" rel=\"noopener\">Alpine.js x-defer plugin</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0113",
             "topic": 7,
@@ -363,7 +363,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "TBT measures the total time the main thread is blocked by JavaScript tasks longer than 50ms, preventing the browser from responding to user input.",
+            "explanation": "<p>TBT measures the total time the main thread is blocked by JavaScript tasks longer than 50ms, preventing the browser from responding to user input.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/faqs/performance-optimization.html\" target=\"_blank\" rel=\"noopener\">Performance optimization</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0114",
             "topic": 7,
@@ -381,7 +381,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "Reduce TBT by deferring non-critical scripts (x-defer), breaking long tasks into smaller chunks, using code splitting, and optimizing JavaScript execution.",
+            "explanation": "<p>Reduce TBT by deferring non-critical scripts (x-defer), breaking long tasks into smaller chunks, using code splitting, and optimizing JavaScript execution.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/faqs/performance-optimization.html\" target=\"_blank\" rel=\"noopener\">Performance optimization</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-plugins/x-defer.html\" target=\"_blank\" rel=\"noopener\">Alpine.js x-defer plugin</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0115",
             "topic": 7,
@@ -399,7 +399,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "Chrome's Performance Panel provides detailed flame charts showing script execution, rendering, and painting, allowing identification of bottlenecks not obvious from high-level scores.",
+            "explanation": "<p>Chrome's Performance Panel provides detailed flame charts showing script execution, rendering, and painting, allowing identification of bottlenecks not obvious from high-level scores.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/performance-and-crux.html\" target=\"_blank\" rel=\"noopener\">Performance and CrUX</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0116",
             "topic": 7,
@@ -417,7 +417,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "RUM tools collect performance data from actual users across different devices, locations, and network conditions, providing comprehensive real-world performance insights.",
+            "explanation": "<p>RUM tools collect performance data from actual users across different devices, locations, and network conditions, providing comprehensive real-world performance insights.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/performance-and-crux.html\" target=\"_blank\" rel=\"noopener\">Performance and CrUX</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0117",
             "topic": 7,
@@ -435,7 +435,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "Use PerformanceObserver to track 'largest-contentful-paint' entries, or use Lighthouse and Chrome DevTools which highlight the LCP element in their reports.",
+            "explanation": "<p>Use PerformanceObserver to track 'largest-contentful-paint' entries, or use Lighthouse and Chrome DevTools which highlight the LCP element in their reports.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/performance-and-crux.html\" target=\"_blank\" rel=\"noopener\">Performance and CrUX</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0118",
             "topic": 7,
@@ -453,7 +453,7 @@ window.TOPIC_DATA[7] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Start with TTFB optimization as the foundation, then optimize LCP (images\/content), CLS (layout stability), and INP (interactivity) with specific techniques for each metric.",
+            "explanation": "<p>Start with TTFB optimization as the foundation, then optimize LCP (images/content), CLS (layout stability), and INP (interactivity) with specific techniques for each metric.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/building-your-theme/preserving-good-google-page-rank-metrics.html\" target=\"_blank\" rel=\"noopener\">Optimizing Core Web Vitals and Google Page Speed</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/faqs/performance-optimization.html\" target=\"_blank\" rel=\"noopener\">Performance optimization</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0119",
             "topic": 7,
