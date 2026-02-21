@@ -1,5 +1,7 @@
 /**
- * Topic Names Mapping
+ * @author    Magebit <info@magebit.com>
+ * @copyright Copyright (c) Magebit, Ltd. (https://magebit.com)
+ * @license   https://magebit.com/code-license
  */
 
 window.TOPIC_NAMES = {

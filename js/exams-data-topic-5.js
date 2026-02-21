@@ -1,7 +1,7 @@
 /**
- * Topic 5 Data - Auto-generated
- * Topic: Tailwind CSS and Hyvä
- * Questions: 11
+ * @author    Magebit <info@magebit.com>
+ * @copyright Copyright (c) Magebit, Ltd. (https://magebit.com)
+ * @license   https://magebit.com/code-license
  */
 
 window.TOPIC_DATA = window.TOPIC_DATA || {};

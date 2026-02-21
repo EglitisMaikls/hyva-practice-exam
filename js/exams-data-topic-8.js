@@ -1,7 +1,7 @@
 /**
- * Topic 8 Data - Auto-generated
- * Topic: Hyvä Features
- * Questions: 18
+ * @author    Magebit <info@magebit.com>
+ * @copyright Copyright (c) Magebit, Ltd. (https://magebit.com)
+ * @license   https://magebit.com/code-license
  */
 
 window.TOPIC_DATA = window.TOPIC_DATA || {};

@@ -1,3 +1,9 @@
+/**
+ * @author    Magebit <info@magebit.com>
+ * @copyright Copyright (c) Magebit, Ltd. (https://magebit.com)
+ * @license   https://magebit.com/code-license
+ */
+
 window.STUDY_CONTENT = window.STUDY_CONTENT || {};
 window.STUDY_CONTENT[6] = {
     name: "Alpine.js and JavaScript",
@@ -9,7 +15,7 @@ window.STUDY_CONTENT[6] = {
                 "Calling the original function maintaining the correct object context",
                 "Using global functions instead of inline functions with Alpine.data()"
             ],
-            content: `<h3 class="study-content-heading">1. Overriding global JS functions using Proxy or wrapper</h3>
+            content: `<h3 class="study-content-heading">Overriding global JS functions using Proxy or wrapper</h3>
 <p>Avoid copying the entire .phtml template into your theme: that masks upstream changes and makes upgrades costly. Instead, customize only the functions or properties that need to change.</p>
 
 <p><strong>Recipe:</strong></p>
@@ -39,7 +45,7 @@ hyva.formatPrice = function (value, showSign, options = {}) {
 
 <p>For Alpine component constructors (e.g. <code>initConfigurableOptions</code>), override the constructor, call the original, then mutate the returned instance (e.g. wrap <code>instance.init</code>) before returning it. Multiple modules can customize the same function by each calling the previous reference.</p>
 
-<h3 class="study-content-heading">2. Calling the original function maintaining the correct object context</h3>
+<h3 class="study-content-heading">Calling the original function maintaining the correct object context</h3>
 <p>When delegating to the original, pass the correct <code>this</code> so the original runs in the right context.</p>
 
 <ul>
@@ -55,7 +61,7 @@ instance.init = function () {
 };
 return instance;</code></pre>
 
-<h3 class="study-content-heading">3. Using global functions instead of inline functions with Alpine.data()</h3>
+<h3 class="study-content-heading">Using global functions instead of inline functions with Alpine.data()</h3>
 <p>In Alpine CSP, <code>x-data</code> cannot evaluate inline expressions. The value must refer to a function <strong>registered with <code>Alpine.data()</code></strong>. Hyvä uses <strong>named functions in global scope</strong> so they can be proxied or wrapped (as in Overriding JavaScript).</p>
 
 <p><strong>Pattern:</strong></p>
@@ -79,14 +85,13 @@ window.addEventListener('alpine:init', () => Alpine.data('initMyComponent', init
             bullets: [
                 "Avoid rendering script instance specific values in the JS by using data attributes instead"
             ],
-            content: `<h3 class="study-content-heading">Reusable Alpine components</h3>
+            content: `<h3 class="study-content-heading">Avoid rendering script instance specific values in the JS by using data attributes instead</h3>
 <p>Alpine init functions return a <strong>per-instance</strong> object — the same function can power multiple components on one page or across pages. Keep components reusable by never baking instance-specific server values into the script itself.</p>
 
 <div class="study-note study-note-important">
 <p><strong>Avoid unique function names or inline values per instance</strong> (e.g. <code>initComponent_&lt;?= $product->getId() ?&gt;</code>). Every variation duplicates JS in the DOM, inflates page size, and adds CSP hashes (risking "Header too large" errors).</p>
 </div>
 
-<h3 class="study-content-heading">Pass instance data via data attributes or init arguments</h3>
 <p>Define the function <strong>once</strong>; supply per-instance data from PHP through the template:</p>
 
 <p><strong>1. Data attributes</strong> — PHP stays on the element, read in JS via <code>this.$el.dataset</code>:</p>
@@ -115,10 +120,7 @@ window.addEventListener('alpine:init', () => Alpine.data('initMyComponent', init
             bullets: [
                 "Use init-external-scripts and facades"
             ],
-            content: `<h3 class="study-content-heading">Why external JS hurts performance</h3>
-<p>Loading external JavaScript in <code>&lt;head&gt;</code> blocks the main thread and rendering, which hurts Google ranking metrics (PageSpeed, LCP, INP). Defer loading until the script is actually needed—e.g. after user interaction or when content scrolls into view.</p>
-
-<h3 class="study-content-heading">init-external-scripts</h3>
+            content: `<h3 class="study-content-heading">Use init-external-scripts</h3>
 <p>The <strong>init-external-scripts</strong> event is a Hyvä event fired <strong>once</strong> when the user first interacts with the page (any of: <code>touchstart</code>, <code>mouseover</code>, <code>wheel</code>, <code>scroll</code>, <code>keydown</code>). Use it to load analytics, tag managers, tracking pixels, and similar scripts <em>after</em> that first interaction so they do not block initial paint or interactivity.</p>
 
 <p><strong>Example:</strong></p>
@@ -159,7 +161,7 @@ window.addEventListener('alpine:init', () => Alpine.data('initMyComponent', init
                 "Using events to trigger updates between related components instead of relying on nesting Alpine components",
                 "Moving related components into different parts of a page"
             ],
-            content: `<h3 class="study-content-heading">1. Using events to trigger updates between related components</h3>
+            content: `<h3 class="study-content-heading">Using events to trigger updates between related components</h3>
 <p>In Hyvä, <strong>events</strong> are how decoupled components on a page communicate state changes. The event/subscriber pattern keeps components extensible and independent: they do not need to be nested or share a parent scope.</p>
 
 <p><strong>Dispatch from one component:</strong> use <code>$dispatch('event-name', payload)</code> to send a custom event. The payload is available as <code>event.detail</code> to listeners.</p>
@@ -185,7 +187,7 @@ window.addEventListener('alpine:init', () => Alpine.data('initMyComponent', init
 
 <p>When a <strong>nested</strong> component needs to call a parent method, avoid relying on Alpine’s parent scope (especially in Alpine v2 where outer scope is not accessible). Use <code>$dispatch('action-name')</code> on the child and <code>@action-name="parentMethod()"</code> on the parent so the parent handles the action without tight coupling.</p>
 
-<h3 class="study-content-heading">2. Moving related components into different parts of a page</h3>
+<h3 class="study-content-heading">Moving related components into different parts of a page</h3>
 <p>Because communication is event-based, components do not need to live next to each other in the DOM. You can place the mini-cart, messages bar, authentication slider, or PDP price-box in different layout blocks or templates; they still work as long as they listen for or dispatch the same events.</p>
 
 <p><strong>Hyvä examples:</strong></p>
@@ -247,7 +249,7 @@ window.addEventListener('alpine:init', () => Alpine.data('initMyComponent', init
                 "Using iteration variables within component methods",
                 "Avoiding injecting scripts from Ajax responses after the initial page load"
             ],
-            content: `<h3 class="study-content-heading">1. Avoiding scripts within Alpine templates</h3>
+            content: `<h3 class="study-content-heading">Avoiding scripts within Alpine templates</h3>
 <p>Under strict CSP, HTML attributes cannot contain JavaScript <strong>expressions</strong> — the Alpine CSP build disallows <code>new Function()</code>-style evaluation (which would require <code>unsafe-eval</code>). In templates, use only <strong>property names</strong> or <strong>method names</strong>, not inline expressions.</p>
 
 <p><strong>No inline expressions:</strong> negation, ternaries, and mutations must live in component methods.</p>
@@ -259,7 +261,7 @@ window.addEventListener('alpine:init', () => Alpine.data('initMyComponent', init
 
 <p>Do not put <code>&lt;script&gt;</code> tags inside Alpine template markup that is repeated or dynamically rendered; keep all logic in registered components and external scripts authorized by CSP (nonce or hash).</p>
 
-<h3 class="study-content-heading">2. Using Alpine.data()</h3>
+<h3 class="study-content-heading">Using Alpine.data()</h3>
 <p>In Alpine CSP, <code>x-data</code> must reference a function <strong>registered with <code>Alpine.data()</code></strong>. Inline objects like <code>x-data="{ open: false }"</code> are not allowed because they require evaluating an expression.</p>
 
 <pre><code class="language-javascript">function initMyComponent() {
@@ -273,7 +275,7 @@ window.addEventListener('alpine:init', () => {
 
 <p><code>Alpine.data()</code> is only available after Alpine loads, so register in an <code>alpine:init</code> listener. For composition (e.g. <code>hyva.modal</code>, <code>hyva.formValidation</code>), merge inside the constructor with <code>Object.assign(hyva.modal.call(this), hyva.formValidation(this.$el), { ... })</code>.</p>
 
-<h3 class="study-content-heading">3. Using data attributes as arguments</h3>
+<h3 class="study-content-heading">Using data attributes as arguments</h3>
 <p>CSP does not allow passing arguments from the template into a method (e.g. <code>@click="setTab('shipping')"</code>). Use <strong>data attributes</strong> and read them in the method via <code>this.$el.dataset</code> or <code>this.$event.target.dataset</code>.</p>
 
 <pre><code class="language-html">&lt;button @click="setTab" data-tab="shipping"&gt;Shipping&lt;/button&gt;</code></pre>
@@ -284,7 +286,7 @@ window.addEventListener('alpine:init', () => {
 
 <p>For server-supplied config, put JSON on a <code>data-config</code> (or similar) attribute and parse in <code>init()</code>: <code>this.config = JSON.parse(this.$el.dataset.config || '{}')</code>. Use <code>$escaper->escapeHtmlAttr()</code> for the value in PHP, not <code>escapeJs()</code>.</p>
 
-<h3 class="study-content-heading">4. Using iteration variables within component methods</h3>
+<h3 class="study-content-heading">Using iteration variables within component methods</h3>
 <p>In <code>x-for</code>, the value-provider must be a <strong>property or method with no arguments</strong> (e.g. <code>items</code> or <code>getItems</code>, not <code>getItems('category')</code>). The iteration variable and index are available as <code>this.item</code> and <code>this.index</code> inside any method called from the loop.</p>
 
 <pre><code class="language-html">&lt;template x-for="(item, index) in items" :key="index"&gt;
@@ -298,7 +300,7 @@ window.addEventListener('alpine:init', () => {
 
 <p>Use methods for any transformation (e.g. <code>listItemClasses()</code> using <code>this.item</code> and <code>this.index</code>) instead of inline expressions in the template.</p>
 
-<h3 class="study-content-heading">5. Avoiding injecting scripts from Ajax responses</h3>
+<h3 class="study-content-heading">Avoiding injecting scripts from Ajax responses after the initial page load</h3>
 <p>Under strict CSP, only scripts that are part of the initial page and authorized (via nonce or hash in the CSP header) can run. <strong>Do not inject <code>&lt;script&gt;</code> tags from Ajax HTML</strong> (e.g. via <code>innerHTML</code> or <code>hyva.activateScripts()</code>) — those scripts are not in the original document and will not have a valid nonce/hash, so the browser will block them.</p>
 
 <p><strong>Preferred approach:</strong> Have the server return <strong>data only</strong> (e.g. JSON). The existing page JS (already loaded and authorized) then updates the DOM or Alpine state. If you must replace HTML from a fetch response, strip or avoid <code>&lt;script&gt;</code> in that HTML and drive behavior with the JS already on the page (e.g. pass data into existing components or dispatch events).</p>

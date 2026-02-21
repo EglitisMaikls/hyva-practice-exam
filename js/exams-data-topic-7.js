@@ -1,7 +1,7 @@
 /**
- * Topic 7 Data - Auto-generated
- * Topic: Frontend Performance
- * Questions: 25
+ * @author    Magebit <info@magebit.com>
+ * @copyright Copyright (c) Magebit, Ltd. (https://magebit.com)
+ * @license   https://magebit.com/code-license
  */
 
 window.TOPIC_DATA = window.TOPIC_DATA || {};

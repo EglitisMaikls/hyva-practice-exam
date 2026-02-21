@@ -1,3 +1,9 @@
+/**
+ * @author    Magebit <info@magebit.com>
+ * @copyright Copyright (c) Magebit, Ltd. (https://magebit.com)
+ * @license   https://magebit.com/code-license
+ */
+
 window.STUDY_CONTENT = window.STUDY_CONTENT || {};
 window.STUDY_CONTENT[7] = {
     name: "Frontend Performance",
@@ -66,19 +72,15 @@ window.STUDY_CONTENT[7] = {
                 "Following advice to improve performance in pagespeed results",
                 "Determining low-hanging fruit in pagespeed recommendations"
             ],
-            content: `<h3 class="study-content-heading">Lab vs field data</h3>
+            content: `<h3 class="study-content-heading">Following advice to improve performance in pagespeed results.</h3>
 <p><strong>Lab data</strong> (Lighthouse, Performance panel) is collected in a controlled environment and is useful for debugging; it may not reflect real-world bottlenecks. <strong>Field data</strong> (Chrome UX Report / CrUX) reflects actual user experience but has a more limited set of metrics. PageSpeed Insights uses both when enough CrUX data exists.</p>
 
-<h3 class="study-content-heading">Google Lighthouse</h3>
 <p>Runs tests against a URL in the browser (lab data). Run in a <strong>private browsing window</strong> (no extensions), throttle to <strong>Slow 3G</strong> in the Network panel, and use the <strong>Mobile Device</strong> setting. The report includes links to documentation for each recommendation—follow them to apply fixes. Useful before deployment since it does not require live traffic.</p>
 
-<h3 class="study-content-heading">Google PageSpeed Insights (pagespeed.web.dev)</h3>
-<p>Uses <strong>CrUX (Chrome UX Report)</strong> for real-user data when available, plus lab data. Better reflects how the site performs for actual visitors (device, location, network). If CrUX data is insufficient, only a Lighthouse-style lab report is shown (run on Google's baseline environment). Reports link to frontend performance topics; use them to prioritize and implement fixes.</p>
+<p>Use <strong>CrUX (Chrome UX Report)</strong> for real-user data when available, plus lab data. Better reflects how the site performs for actual visitors (device, location, network). If CrUX data is insufficient, only a Lighthouse-style lab report is shown (run on Google's baseline environment). Reports link to frontend performance topics; use them to prioritize and implement fixes.</p>
 
-<h3 class="study-content-heading">Chrome DevTools: Performance and Performance Insights</h3>
 <p>The <strong>Performance</strong> panel records a timeline (script, layout, paint) for detailed analysis; it is lab-based and requires some familiarity with browser internals. The <strong>Performance Insights</strong> panel focuses on page load and Core Web Vitals with an insights timeline and actionable suggestions. For both, use throttling (e.g. Slow 3G + 4x CPU slowdown for Insights) to simulate typical user conditions.</p>
 
-<h3 class="study-content-heading">CrUX and RUM</h3>
 <p>CrUX is the public field dataset from Chrome users. For deeper analysis, use the <strong>PerformanceObserver</strong> API (e.g. for <code>largest-contentful-paint</code> or custom <code>elementtiming</code> entries) or third-party RUM tools (e.g. RumVision, Debugbear, JaJuMa RUM for Hyvä) to collect real-user metrics.</p>
 
 <h3 class="study-content-heading">Following advice and low-hanging fruit</h3>

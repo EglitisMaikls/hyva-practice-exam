@@ -1,7 +1,7 @@
 /**
- * Topic 1 Data - Auto-generated
- * Topic: Layout XML Blocks and View Models
- * Questions: 25
+ * @author    Magebit <info@magebit.com>
+ * @copyright Copyright (c) Magebit, Ltd. (https://magebit.com)
+ * @license   https://magebit.com/code-license
  */
 
 window.TOPIC_DATA = window.TOPIC_DATA || {};
@@ -21,7 +21,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "The correct approach is to use <referenceContainer> in the child theme layout XML to add blocks without modifying the parent theme. This maintains upgradability.",
+            "explanation": "<p>The correct approach is to use <referenceContainer> in the child theme layout XML to add blocks without modifying the parent theme. This maintains upgradability.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/layout-and-templates/referencing-parent-theme-blocks.html\" target=\"_blank\" rel=\"noopener\">Referencing parent-theme blocks</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0001",
             "topic": 1,
@@ -39,7 +39,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "When a block is redeclared in a child theme, it completely replaces the parent theme block. This allows full customization while maintaining the parent theme structure.",
+            "explanation": "<p>When a block is redeclared in a child theme, it completely replaces the parent theme block. This allows full customization while maintaining the parent theme structure.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/layout-and-templates/referencing-parent-theme-blocks.html\" target=\"_blank\" rel=\"noopener\">Referencing parent-theme blocks</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0002",
             "topic": 1,
@@ -57,7 +57,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "Magento provides debugging tools to determine all layout handles applied to a route. This is essential for understanding the layout merge order and customization points.",
+            "explanation": "<p>Magento provides debugging tools to determine all layout handles applied to a route. This is essential for understanding the layout merge order and customization points.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/layout-and-templates/the-hyva_-layout-handles.html\" target=\"_blank\" rel=\"noopener\">The hyva_ layout handles</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0003",
             "topic": 1,
@@ -75,7 +75,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "Using block_html cache for blocks with customer-specific data can cause privacy issues where one customer's data is shown to another. Cache tags must be properly configured.",
+            "explanation": "<p>Using block_html cache for blocks with customer-specific data can cause privacy issues where one customer's data is shown to another. Cache tags must be properly configured.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/core-block-html-full-page-caching.html\" target=\"_blank\" rel=\"noopener\">Block HTML and Full Page Caching</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/csp-and-block-caching.html\" target=\"_blank\" rel=\"noopener\">CSP and block_html cache</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0004",
             "topic": 1,
@@ -93,7 +93,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Custom layout handles allow you to create reusable layout configurations that can be applied to multiple pages, avoiding code duplication.",
+            "explanation": "<p>Custom layout handles allow you to create reusable layout configurations that can be applied to multiple pages, avoiding code duplication.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/layout-and-templates/the-hyva_-layout-handles.html\" target=\"_blank\" rel=\"noopener\">The hyva_ layout handles</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0005",
             "topic": 1,
@@ -111,7 +111,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "The <move> directive in layout XML allows you to move blocks between containers without duplicating code, maintaining proper block hierarchy.",
+            "explanation": "<p>The <move> directive in layout XML allows you to move blocks between containers without duplicating code, maintaining proper block hierarchy.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/layout-and-templates/referencing-parent-theme-blocks.html\" target=\"_blank\" rel=\"noopener\">Referencing parent-theme blocks</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0006",
             "topic": 1,
@@ -129,7 +129,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "The ViewModelRegistry ($viewModels) is automatically available in Hyv\u00e4 templates, allowing direct access to view models without needing to declare them in layout XML.",
+            "explanation": "<p>The ViewModelRegistry ($viewModels) is automatically available in Hyvä templates, allowing direct access to view models without needing to declare them in layout XML.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/working-with-view-models/index.html\" target=\"_blank\" rel=\"noopener\">Working with View Models</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0007",
             "topic": 1,
@@ -147,7 +147,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "View models implementing IdentityInterface can return cache tags that are automatically included in HTTP response headers for proper FPC cache invalidation.",
+            "explanation": "<p>View models implementing IdentityInterface can return cache tags that are automatically included in HTTP response headers for proper FPC cache invalidation.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/view-model-cache-tags.html\" target=\"_blank\" rel=\"noopener\">View Model Cache Tags</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/working-with-view-models/index.html\" target=\"_blank\" rel=\"noopener\">Working with View Models</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0008",
             "topic": 1,
@@ -165,7 +165,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "Layout handles are processed in merge order, with later handles able to override or extend configurations from earlier handles, allowing for flexible customization.",
+            "explanation": "<p>Layout handles are processed in merge order, with later handles able to override or extend configurations from earlier handles, allowing for flexible customization.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/layout-and-templates/referencing-parent-theme-blocks.html\" target=\"_blank\" rel=\"noopener\">Referencing parent-theme blocks</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/layout-and-templates/the-hyva_-layout-handles.html\" target=\"_blank\" rel=\"noopener\">The hyva_ layout handles</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0009",
             "topic": 1,
@@ -183,7 +183,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "Hyv\u00e4 automatically creates hyva_ prefixed handles for every standard handle, allowing Hyv\u00e4-specific customizations that only apply when a Hyv\u00e4 theme is active, enabling side-by-side Luma and Hyv\u00e4 stores.",
+            "explanation": "<p>Hyvä automatically creates hyva_ prefixed handles for every standard handle, allowing Hyvä-specific customizations that only apply when a Hyvä theme is active, enabling side-by-side Luma and Hyvä stores.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/layout-and-templates/the-hyva_-layout-handles.html\" target=\"_blank\" rel=\"noopener\">The hyva_ layout handles</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0010",
             "topic": 1,
@@ -201,7 +201,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "<referenceBlock> updates existing block configurations without replacing them, ensuring parent theme updates are not masked. <block> replaces the entire block definition.",
+            "explanation": "<p><referenceBlock> updates existing block configurations without replacing them, ensuring parent theme updates are not masked. <block> replaces the entire block definition.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/layout-and-templates/referencing-parent-theme-blocks.html\" target=\"_blank\" rel=\"noopener\">Referencing parent-theme blocks</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0011",
             "topic": 1,
@@ -219,7 +219,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "Magento uses four caching layers: Low-Level Cache (config, layout, EAV), Full Page Cache (complete HTML), ESI Cache (page fragments), and Browser Cache (static assets, localStorage).",
+            "explanation": "<p>Magento uses four caching layers: Low-Level Cache (config, layout, EAV), Full Page Cache (complete HTML), ESI Cache (page fragments), and Browser Cache (static assets, localStorage).</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/core-block-html-full-page-caching.html\" target=\"_blank\" rel=\"noopener\">Block HTML and Full Page Caching</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0012",
             "topic": 1,
@@ -237,7 +237,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "Cache tags are string identifiers that associate cache records with data. When data changes, all cache records with matching tags are invalidated together across all caching layers.",
+            "explanation": "<p>Cache tags are string identifiers that associate cache records with data. When data changes, all cache records with matching tags are invalidated together across all caching layers.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/core-block-html-full-page-caching.html\" target=\"_blank\" rel=\"noopener\">Block HTML and Full Page Caching</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0013",
             "topic": 1,
@@ -255,7 +255,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "A"
             ],
-            "explanation": "Blocks add cache tags by overriding getCacheTags() or calling setCacheTags($tagsArray) before rendering, ensuring proper cache invalidation when related data changes.",
+            "explanation": "<p>Blocks add cache tags by overriding getCacheTags() or calling setCacheTags($tagsArray) before rendering, ensuring proper cache invalidation when related data changes.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/core-block-html-full-page-caching.html\" target=\"_blank\" rel=\"noopener\">Block HTML and Full Page Caching</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0014",
             "topic": 1,
@@ -273,7 +273,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "FPC cache tags come from blocks implementing IdentityInterface::getIdentities(). All identities are aggregated into the X-Magento-Tags HTTP response header for Varnish invalidation.",
+            "explanation": "<p>FPC cache tags come from blocks implementing IdentityInterface::getIdentities(). All identities are aggregated into the X-Magento-Tags HTTP response header for Varnish invalidation.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/core-block-html-full-page-caching.html\" target=\"_blank\" rel=\"noopener\">Block HTML and Full Page Caching</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0015",
             "topic": 1,
@@ -291,7 +291,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Standard Magento has no API for view models to add cache tags. Hyv\u00e4 allows view models to implement IdentityInterface, automatically adding their cache tags to page responses.",
+            "explanation": "<p>Standard Magento has no API for view models to add cache tags. Hyvä allows view models to implement IdentityInterface, automatically adding their cache tags to page responses.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/view-model-cache-tags.html\" target=\"_blank\" rel=\"noopener\">View Model Cache Tags</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/core-block-html-full-page-caching.html\" target=\"_blank\" rel=\"noopener\">Block HTML and Full Page Caching</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0016",
             "topic": 1,
@@ -309,7 +309,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "Varnish FPC invalidation uses HTTP PURGE requests with X-Magento-Tags-Pattern containing regex patterns. Varnish evicts all cache records whose tags match the pattern.",
+            "explanation": "<p>Varnish FPC invalidation uses HTTP PURGE requests with X-Magento-Tags-Pattern containing regex patterns. Varnish evicts all cache records whose tags match the pattern.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/core-block-html-full-page-caching.html\" target=\"_blank\" rel=\"noopener\">Block HTML and Full Page Caching</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0017",
             "topic": 1,
@@ -327,7 +327,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "Block HTML cache stores rendered output of individual blocks. FPC stores complete HTML page responses, dramatically reducing server load by serving cached pages without Magento execution.",
+            "explanation": "<p>Block HTML cache stores rendered output of individual blocks. FPC stores complete HTML page responses, dramatically reducing server load by serving cached pages without Magento execution.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/core-block-html-full-page-caching.html\" target=\"_blank\" rel=\"noopener\">Block HTML and Full Page Caching</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0018",
             "topic": 1,
@@ -345,7 +345,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "ESI allows caching page fragments separately with different TTLs. A mostly-static page can include dynamic blocks (like mini-cart) that are cached and assembled at the edge (Varnish).",
+            "explanation": "<p>ESI allows caching page fragments separately with different TTLs. A mostly-static page can include dynamic blocks (like mini-cart) that are cached and assembled at the edge (Varnish).</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/core-block-html-full-page-caching.html\" target=\"_blank\" rel=\"noopener\">Block HTML and Full Page Caching</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0019",
             "topic": 1,
@@ -363,7 +363,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "Static assets are invalidated by changing the version hash in their URL path. When Magento deploys new assets, the version changes, forcing browsers to fetch fresh files.",
+            "explanation": "<p>Static assets are invalidated by changing the version hash in their URL path. When Magento deploys new assets, the version changes, forcing browsers to fetch fresh files.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/core-block-html-full-page-caching.html\" target=\"_blank\" rel=\"noopener\">Block HTML and Full Page Caching</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0020",
             "topic": 1,
@@ -381,7 +381,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "Without proper cache tags, block_html cache may serve cached content containing one customer's data to another customer, causing serious privacy and security issues.",
+            "explanation": "<p>Without proper cache tags, block_html cache may serve cached content containing one customer's data to another customer, causing serious privacy and security issues.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/core-block-html-full-page-caching.html\" target=\"_blank\" rel=\"noopener\">Block HTML and Full Page Caching</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/csp-and-block-caching.html\" target=\"_blank\" rel=\"noopener\">CSP and block_html cache</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0021",
             "topic": 1,
@@ -399,7 +399,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "Blocks must implement IdentityInterface with getIdentities() method to contribute cache tags to FPC responses. The identities are aggregated into X-Magento-Tags header.",
+            "explanation": "<p>Blocks must implement IdentityInterface with getIdentities() method to contribute cache tags to FPC responses. The identities are aggregated into X-Magento-Tags header.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/core-block-html-full-page-caching.html\" target=\"_blank\" rel=\"noopener\">Block HTML and Full Page Caching</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0022",
             "topic": 1,
@@ -417,7 +417,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "Hyv\u00e4's ViewModelRegistry automatically collects cache tags from view models that implement IdentityInterface and adds them to both Block HTML cache and FPC responses.",
+            "explanation": "<p>Hyvä's ViewModelRegistry automatically collects cache tags from view models that implement IdentityInterface and adds them to both Block HTML cache and FPC responses.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/view-model-cache-tags.html\" target=\"_blank\" rel=\"noopener\">View Model Cache Tags</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/working-with-view-models/index.html\" target=\"_blank\" rel=\"noopener\">Working with View Models</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0023",
             "topic": 1,
@@ -435,7 +435,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "TTL is the expiration time for cache records. After the TTL expires, cache backends automatically discard records, even if they haven't been invalidated by cache tags.",
+            "explanation": "<p>TTL is the expiration time for cache records. After the TTL expires, cache backends automatically discard records, even if they haven't been invalidated by cache tags.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/core-block-html-full-page-caching.html\" target=\"_blank\" rel=\"noopener\">Block HTML and Full Page Caching</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0024",
             "topic": 1,
@@ -453,7 +453,7 @@ window.TOPIC_DATA[1] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "cache:clean removes specific cache types (e.g., config, layout). cache:flush removes all cache types. Use cache:clean during development, cache:flush only when necessary.",
+            "explanation": "<p>cache:clean removes specific cache types (e.g., config, layout). cache:flush removes all cache types. Use cache:clean during development, cache:flush only when necessary.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/advanced-topics/core-block-html-full-page-caching.html\" target=\"_blank\" rel=\"noopener\">Block HTML and Full Page Caching</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0025",
             "topic": 1,

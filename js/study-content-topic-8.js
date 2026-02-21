@@ -1,6 +1,9 @@
 /**
- * Study content - Topic 8: Hyvä Features
+ * @author    Magebit <info@magebit.com>
+ * @copyright Copyright (c) Magebit, Ltd. (https://magebit.com)
+ * @license   https://magebit.com/code-license
  */
+
 window.STUDY_CONTENT = window.STUDY_CONTENT || {};
 window.STUDY_CONTENT[8] = {
     name: "Hyvä Features",
@@ -12,10 +15,10 @@ window.STUDY_CONTENT[8] = {
                 "Using the return value of the show promise",
                 "Updating modal contents depending on outside values when it is opened"
             ],
-            content: `<h3 class="study-content-heading">Including the modal library</h3>
+            content: `
 <p>Ensure the layout handle <code>hyva_modal</code> is applied so the modal JavaScript is loaded. Use the PHP view model <code>Hyva\\Theme\\ViewModel\\Modal</code> via <code>$viewModels->require(\\Hyva\\Theme\\ViewModel\\Modal::class)</code>, then <code>createModal()</code> to configure and render dialogs. Merge with Alpine using <code>x-data="hyva.modal()"</code> or <code>x-data="Object.assign({}, hyva.modal(), myViewModel())"</code> when you need custom state.</p>
 
-<h3 class="study-content-heading">Multiple modals and naming</h3>
+<h3 class="study-content-heading">Using multiple modals on the same page, avoiding naming conflicts</h3>
 <p>Each dialog needs a <strong>unique Alpine.js x-ref name</strong>. With the PHP view model, the ref name is set automatically per modal instance. When calling <code>show()</code> from JavaScript, pass the dialog name as the first argument: <code>show('my-modal', $event)</code>. Use <code>$modal->getShowJs()</code> in PHP so the correct name and <code>$event</code> are emitted (e.g. <code>show('dialog-ref-name', $event)</code>). For extensions or pages with more than one modal, always pass the dialog name or use <code>getShowJs()</code>. Without the PHP view model, set <code>x-ref</code> and pass the same name to <code>show('outer', $event)</code> and <code>overlay('outer')</code> for each dialog to avoid conflicts.</p>
 
 <h3 class="study-content-heading">Return value of show() (promise)</h3>
@@ -23,7 +26,7 @@ window.STUDY_CONTENT[8] = {
 <pre><code>@click="<?= $confirmation->getShowJs() ?>.then(result => result && doConfirm() || doCancel())"</code></pre>
 <p>If the user confirms, pass a value from the OK button (e.g. <code>hide('ok')</code>); on Cancel, <code>hide()</code> with no argument yields a falsy result. Chain <code>.then(result => ...)</code> to run logic after the modal closes.</p>
 
-<h3 class="study-content-heading">Updating modal content when opened</h3>
+<h3 class="study-content-heading">Updating modal contents depending on outside values when it is opened</h3>
 <p>To show content that depends on outside values when the modal opens:</p>
 <ul>
     <li><strong>Template with data:</strong> Use <code>withTemplate('My_Module::dialog.phtml')</code> and pass data via <code>getContentRenderer()->assign('key', $value)</code> or <code>setData('key', $value)</code> before rendering <code>$modal</code>. The template is rendered when the page loads, so for dynamic values you need one of the approaches below.</li>
@@ -38,7 +41,7 @@ window.STUDY_CONTENT[8] = {
                 "Changing the item template for a specific product slider",
                 "Keeping the regular item template for product listings and other product sliders"
             ],
-            content: `<h3 class="study-content-heading">Product sliders (SSR)</h3>
+            content: `
 <p>Product sliders use the layout handle <code>hyva_product_slider</code> and the template <code>Magento_Catalog::product/slider/product-slider.phtml</code>. As of Hyvä 1.4.0, product item rendering is <strong>consistent</strong>: all product sliders and the product listing use <code>Magento_Catalog/templates/product/list/item.phtml</code>. The deprecated <code>item_template</code> argument has been removed.</p>
 
 <h3 class="study-content-heading">Changing the item template for a specific product slider</h3>
@@ -86,7 +89,7 @@ window.STUDY_CONTENT[8] = {
 &lt;/page&gt;</code></pre>
 <p>Initialize the Alpine component on the form: <code>x-data="hyva.formValidation($el)"</code>. For custom logic, merge with your view model: <code>x-data="{...initMyForm(), ...hyva.formValidation($el)}"</code>. Use <code>@submit="onSubmit"</code> to validate on submit (submit is prevented until valid). Wrap inputs in a container with classes <code>field field-reserved</code> to reserve space for error messages and avoid layout shift. Use <code>data-validate='{"required": true}'</code> (JSON) or HTML5 attributes like <code>required</code>, <code>min</code>, <code>max</code>, <code>pattern</code>. For CSP, pass the form element: <code>hyva.formValidation(this.$el)</code> or <code>hyva.formValidation($el)</code> on the root.</p>
 
-<h3 class="study-content-heading">Browser native HTML5 vs JS validation</h3>
+<h3 class="study-content-heading">Benefits and downsides of browser native HTML5 validation compared to JS validation</h3>
 <p><strong>Native (HTML5 / constraint API):</strong> No extra JS, good accessibility (screen readers, keyboard), mobile-friendly input types (e.g. email keyboard). Limited to built-in rules and browser message styling/location. Hyvä’s library uses the constraint API where possible (required, min, max, pattern, etc.) so many rules are still native under the hood.</p>
 <p><strong>JS validation (Hyvä library):</strong> Custom messages in a fixed place, custom and async rules (e.g. API checks), consistent UX across browsers, and accessibility handled by the library. Downsides: more script, need to keep rules in sync (data-validate / HTML attributes). Use native when it’s enough; add the JS library when you need custom messages, custom rules, or async validation.</p>
 

@@ -1,7 +1,7 @@
 /**
- * Topic 3 Data - Auto-generated
- * Topic: Themes
- * Questions: 3
+ * @author    Magebit <info@magebit.com>
+ * @copyright Copyright (c) Magebit, Ltd. (https://magebit.com)
+ * @license   https://magebit.com/code-license
  */
 
 window.TOPIC_DATA = window.TOPIC_DATA || {};
@@ -21,7 +21,7 @@ window.TOPIC_DATA[3] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Styles and Tailwind configuration can be shared by organizing themes with a common parent directory and using the extends feature in tailwind.config.js to reference shared configurations.",
+            "explanation": "<p>Styles and Tailwind configuration can be shared by organizing themes with a common parent directory and using the extends feature in tailwind.config.js to reference shared configurations.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-tailwindcss/sharing-common-css-between-themes.html\" target=\"_blank\" rel=\"noopener\">Sharing Common CSS Between Themes</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0032",
             "topic": 3,
@@ -39,7 +39,7 @@ window.TOPIC_DATA[3] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "Common customizations in child theme tailwind.config.js include changing color palettes, adjusting breakpoints, and extending the theme configuration while maintaining parent theme compatibility.",
+            "explanation": "<p>Common customizations in child theme tailwind.config.js include changing color palettes, adjusting breakpoints, and extending the theme configuration while maintaining parent theme compatibility.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/building-your-theme/index.html\" target=\"_blank\" rel=\"noopener\">Building a Hyvä Child Theme</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0033",
             "topic": 3,
@@ -57,7 +57,7 @@ window.TOPIC_DATA[3] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "Organizing themes with a common parent directory allows sharing Tailwind configuration files, reducing duplication and ensuring consistency across themes.",
+            "explanation": "<p>Organizing themes with a common parent directory allows sharing Tailwind configuration files, reducing duplication and ensuring consistency across themes.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-tailwindcss/sharing-common-css-between-themes.html\" target=\"_blank\" rel=\"noopener\">Sharing Common CSS Between Themes</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0034",
             "topic": 3,

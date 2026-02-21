@@ -1,7 +1,7 @@
 /**
- * Topic 2 Data - Auto-generated
- * Topic: Templates
- * Questions: 6
+ * @author    Magebit <info@magebit.com>
+ * @copyright Copyright (c) Magebit, Ltd. (https://magebit.com)
+ * @license   https://magebit.com/code-license
  */
 
 window.TOPIC_DATA = window.TOPIC_DATA || {};
@@ -21,7 +21,7 @@ window.TOPIC_DATA[2] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "JSON data in data attributes must be properly escaped. Using json_encode() with the appropriate flags ensures safe rendering in HTML attributes.",
+            "explanation": "<p>JSON data in data attributes must be properly escaped. Using json_encode() with the appropriate flags ensures safe rendering in HTML attributes.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-properties.html\" target=\"_blank\" rel=\"noopener\">Component properties in Alpine CSP</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-example-component.html\" target=\"_blank\" rel=\"noopener\">Alpine CSP example component</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0026",
             "topic": 2,
@@ -39,7 +39,7 @@ window.TOPIC_DATA[2] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Product names should be escaped using Magento's Escaper class ($escaper->escapeHtml()) to prevent XSS attacks and ensure proper HTML encoding.",
+            "explanation": "<p>Product names should be escaped using Magento's Escaper class ($escaper->escapeHtml()) to prevent XSS attacks and ensure proper HTML encoding.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener\">JavaScript form validation</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/patterns/loading-external-javascript.html\" target=\"_blank\" rel=\"noopener\">Loading external JavaScript</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0027",
             "topic": 2,
@@ -57,7 +57,7 @@ window.TOPIC_DATA[2] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "For textarea content, use $escaper->escapeHtml() as the content is rendered as HTML text content, not as an attribute.",
+            "explanation": "<p>For textarea content, use $escaper->escapeHtml() as the content is rendered as HTML text content, not as an attribute.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-properties.html\" target=\"_blank\" rel=\"noopener\">Component properties in Alpine CSP</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener\">JavaScript form validation</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0028",
             "topic": 2,
@@ -75,7 +75,7 @@ window.TOPIC_DATA[2] = {
             "correctAnswer": [
                 "B"
             ],
-            "explanation": "The fetchView() method allows rendering a template programmatically from within another template, providing flexibility without requiring child block configuration.",
+            "explanation": "<p>The fetchView() method allows rendering a template programmatically from within another template, providing flexibility without requiring child block configuration.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/working-with-alpinejs/alpine-v2-and-v3-compatible-code.html\" target=\"_blank\" rel=\"noopener\">Alpine v2 and v3 compatible code</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/layout-and-templates/referencing-parent-theme-blocks.html\" target=\"_blank\" rel=\"noopener\">Referencing parent-theme blocks</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0029",
             "topic": 2,
@@ -93,7 +93,7 @@ window.TOPIC_DATA[2] = {
             "correctAnswer": [
                 "D"
             ],
-            "explanation": "escapeHtml() is for HTML text content, while escapeHtmlAttr() is specifically for HTML attribute values, handling quotes and special characters differently.",
+            "explanation": "<p>escapeHtml() is for HTML text content, while escapeHtmlAttr() is specifically for HTML attribute values, handling quotes and special characters differently.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-properties.html\" target=\"_blank\" rel=\"noopener\">Component properties in Alpine CSP</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/form-validation/javascript-form-validation.html\" target=\"_blank\" rel=\"noopener\">JavaScript form validation</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0030",
             "topic": 2,
@@ -111,7 +111,7 @@ window.TOPIC_DATA[2] = {
             "correctAnswer": [
                 "C"
             ],
-            "explanation": "Different contexts have different syntax rules and attack vectors. Proper context-specific escaping prevents XSS attacks while maintaining correct rendering.",
+            "explanation": "<p>Different contexts have different syntax rules and attack vectors. Proper context-specific escaping prevents XSS attacks while maintaining correct rendering.</p><div class=\"study-references\"><strong>References</strong><ul><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/csp/alpine-csp-properties.html\" target=\"_blank\" rel=\"noopener\">Component properties in Alpine CSP</a> (Hyvä docs)</li><li><a href=\"https://docs.hyva.io/hyva-themes/writing-code/patterns/loading-external-javascript.html\" target=\"_blank\" rel=\"noopener\">Loading external JavaScript</a> (Hyvä docs)</li></ul></div>",
             "isMultiple": false,
             "id": "q_0031",
             "topic": 2,
